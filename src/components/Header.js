@@ -59,7 +59,7 @@ function Header() {
                 <h1>MICHAEL MINDA</h1>
             </a>
 
-            <div className="nav_blur"></div>
+            <div className="nav_blur" onClick={cambio}></div>
 
             <nav>
                 <li className="Inicio">
