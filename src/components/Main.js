@@ -29,14 +29,30 @@ function main() {
         <section className="sobre_mi">
 
           <div className="capa1">
-            <h2>Aserca de mí...</h2>
-            <p>
-            ¡Hola! Soy Ronny Michael, comencé mi carrera en el ITB como desarrollo Software
+            
+            <div className="capa2">
+              <section>
+                <h2>Aserca de mí...</h2>
+                <p>
+                  ¡Hola! Soy Ronny Michael estudiante en el ITB en la carrera desarrollo Software y actualmente me estoy reinventando como desarrollador front end de manera autodidacta,
+                </p>
+              </section>
+              <section>
+                <p>
+                  y crear cosas con las que podamos interactuar, soy un aprendiz continuo para mi aprender equivale a explorar nuevas ideas y crecer como individuo.También disfruto de los juegos, la gimnasia y el levantamiento de pesas.
+                </p>
+              </section>
+              <section>
+                <p>
+                  Tambien tengo conocimientos en JAVA y C++ ya que estos son los lenguajes que aprendi en el ITB desde algo tan basico como if else hasta programacion orientada a objetos como abstraccion, polimorfismo etc.
+                </p>
+              </section>
+            </div>
 
-y actualmente me estoy reinventando como desarrollador front end de manera
+            <section className="icos_tec">
 
-autodidacta,
-            </p>
+            </section>
+            
           </div>
 
         </section>

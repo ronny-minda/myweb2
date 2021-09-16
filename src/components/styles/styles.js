@@ -224,7 +224,7 @@ export const Main = styled.main`
 
     .sobre_mi {
         background-color: grey;
-        height: 85vh;
+        height: 100vh;
         display: flex;
         align-items: flex-end;
 
@@ -239,6 +239,27 @@ export const Main = styled.main`
             width: 100%;
             background-color: #ff000099;
             border-top: 12px solid red;
+            .capa2 {
+                /* background-color: blue; */
+                
+                display: flex;
+                section {
+                    
+                    h2 {
+
+                    }
+                    p {
+
+                    }
+                }
+            }
+
+            .icos_tec {
+                height: 150px;
+                width: 100%;
+                background-color: blue;
+            }
+
         }
     }
 
