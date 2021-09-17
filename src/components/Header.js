@@ -39,7 +39,7 @@ function Header() {
                 inicioL: '200px',
                 trabajoL: '150px',
                 contactoL: '50px',
-                blur: '1px',
+                blur: '3px',
                 display: 'block'
             })
         }

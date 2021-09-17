@@ -57,6 +57,63 @@ function main() {
 
         </section>
         
+        <section className="proyectos">
+          <div className="contenedor">
+            <h2>Proyectos</h2>
+            <p className="p_u">
+              Desarrollo Apps moviles, programas para empresas especialisadas, robotica, Desarrollo Web y más...
+            </p>
+            <p className="p_a">
+              Las colavoraciones y trabajos realizo se aplican a todas las aréas de trabajo.
+            </p>
+          </div>
+        </section>
+
+
+        <section className="certificados">
+          <div className="contenedor">
+            <h2>Certificados</h2>
+            <p className="p_u">
+              Desarrollo Apps moviles, programas para empresas especialisadas, robotica, Desarrollo Web y más...
+            </p>
+            <p className="p_a">
+              Las colavoraciones y trabajos realizo se aplican a todas las aréas de trabajo.
+            </p>
+          </div>
+        </section>
+
+
+        <section className="objetivo">
+          <div className="contenedor">
+            <div className="ico"></div>
+            <h3>Responsie Desing</h3>
+            <p>
+              El Responsive Design o diseño adaptativo, es la técnica que se usa en la actualidad para tener una misma web adaptada a las diferentes plataformas que nos brinda la tecnología: ordenador, tablet y Smartphone.
+            </p>
+            
+          </div>
+
+          <div className="contenedor">
+            <div className="ico"></div>
+            <h3>CODIGO SEMANTICO</h3>
+            <p>
+              Los motores de búsqueda analizan el código para saber qué clase de contenido muestran y así, saber cómo mostrarlo.
+            </p>
+            
+          </div>
+
+          <div className="contenedor">
+            <div className="ico"></div>
+            <h3>APLICACIONES ESCALABLES</h3>
+            <p>
+              Se asegura que su aplicacion pueda crecer sin verse comprometido el rendimiento de la misma.
+            </p>
+            
+          </div>
+        </section>
+
+        {/* <h2 className="conta">Contáctame</h2> */}
+
       </Main>
     );
 }

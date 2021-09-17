@@ -223,45 +223,39 @@ export const Main = styled.main`
     }
 
     .sobre_mi {
-        background-color: grey;
-        height: 100vh;
+
+    }
+
+    .objetivo {
+        padding-top: 80px;
         display: flex;
-        align-items: flex-end;
-
-        background-image: url(${img});
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center -0px;//control de scroll paralax
-        transition: 1s background-position;
-
-        .capa1 {
-            height: 70%;
-            width: 100%;
-            background-color: #ff000099;
-            border-top: 12px solid red;
-            .capa2 {
-                /* background-color: blue; */
-                
-                display: flex;
-                section {
-                    
-                    h2 {
-
-                    }
-                    p {
-
-                    }
-                }
-            }
-
-            .icos_tec {
+        .contenedor {
+            width: 33vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .ico {
                 height: 150px;
-                width: 100%;
-                background-color: blue;
+                width: 150px;
+                background-color: #000;
+                border-radius: 50%;
             }
+            h3 {
 
+            }
+            p {
+
+            }
         }
     }
+
+
+
+    
+
+    
+
+    
 
 
 
@@ -322,6 +316,98 @@ export const Main = styled.main`
                 }
             }
         }
+
+
+        .sobre_mi {
+            background-color: grey;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+
+            background-image: url(${img});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center -0px;//control de scroll paralax
+            transition: 1s background-position;
+
+            .capa1 {
+                height: 70%;
+                width: 100%;
+                background-color: #ff000099;
+                border-top: 12px solid red;
+                .capa2 {
+                    /* background-color: blue; */
+                    
+                    display: flex;
+                    section {
+                        
+                        h2 {
+
+                        }
+                        p {
+
+                        }
+                    }
+                }
+
+                .icos_tec {
+                    height: 150px;
+                    width: 100%;
+                    background-color: blue;
+                }
+
+            }
+        }
+
+        .proyectos {
+            height: 90vh;
+            background-image: url(${img});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center -0px;//control de scroll paralax
+            transition: 1s background-position;
+            display: flex;
+            justify-content: flex-end;
+            .contenedor {
+                background-color: #FF000099;
+                width: 40%;
+                height: 100%;
+                h2 {
+
+                }
+                .p_u {
+
+                }
+                .p_a {
+
+                }
+            }
+        }
+
+        .certificados {
+            height: 90vh;
+            background-image: url(${img});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center -0px;//control de scroll paralax
+            transition: 1s background-position;
+            display: flex;
+            justify-content: flex-start;
+            .contenedor {
+                background-color: #FF000099;
+                width: 40%;
+                height: 100%;
+                h2 {
+
+                }
+                .p_u {
+
+                }
+                .p_a {
+
+                }
+            }
+        }
     }
 
     @media (max-width: 750px) {
@@ -372,6 +458,98 @@ export const Main = styled.main`
                         object-fit: cover;
                         border-radius: 50%;
                     }
+                }
+            }
+        }
+
+
+        .sobre_mi {
+            background-color: grey;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+
+            background-image: url(${img});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center -0px;//control de scroll paralax
+            transition: 1s background-position;
+
+            .capa1 {
+                height: 70%;
+                width: 100%;
+                background-color: #ff000099;
+                border-top: 12px solid red;
+                .capa2 {
+                    /* background-color: blue; */
+                    
+                    display: flex;
+                    section {
+                        
+                        h2 {
+
+                        }
+                        p {
+
+                        }
+                    }
+                }
+
+                .icos_tec {
+                    height: 150px;
+                    width: 100%;
+                    background-color: blue;
+                }
+
+            }
+        }
+
+        .proyectos {
+            height: 100vh;
+            background-image: url(${img});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center -0px;//control de scroll paralax
+            transition: 1s background-position;
+            display: flex;
+            align-items: flex-end;
+            .contenedor {
+                background-color: #FF000099;
+                width: 100%;
+                height: 40%;
+                h2 {
+
+                }
+                .p_u {
+
+                }
+                .p_a {
+
+                }
+            }
+        }
+
+        .certificados {
+            height: 100vh;
+            background-image: url(${img});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center -0px;//control de scroll paralax
+            transition: 1s background-position;
+            display: flex;
+            align-items: flex-end;
+            .contenedor {
+                background-color: #FF000099;
+                width: 100%;
+                height: 40%;
+                h2 {
+
+                }
+                .p_u {
+
+                }
+                .p_a {
+
                 }
             }
         }
@@ -428,9 +606,161 @@ export const Main = styled.main`
                 }
             }
         }
+
+
+
+        .sobre_mi {
+            background-color: grey;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+
+            background-image: url(${img});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center -0px;//control de scroll paralax
+            transition: 1s background-position;
+
+            .capa1 {
+                height: 70%;
+                width: 100%;
+                background-color: #ff0099;
+                border-top: 12px solid red;
+                .capa2 {
+                    /* background-color: blue; */
+                    
+                    display: flex;
+                    flex-direction: column;
+                    section {
+                        
+                        h2 {
+
+                        }
+                        p {
+
+                        }
+                    }
+                }
+
+                .icos_tec {
+                    height: 150px;
+                    width: 100%;
+                    background-color: blue;
+                }
+
+            }
+        }
+
+        .proyectos {
+            height: 100vh;
+            background-image: url(${img});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center -0px;//control de scroll paralax
+            transition: 1s background-position;
+            display: flex;
+            align-items: flex-end;
+            .contenedor {
+                background-color: #FF000099;
+                width: 100%;
+                height: 40%;
+                h2 {
+
+                }
+                .p_u {
+
+                }
+                .p_a {
+
+                }
+            }
+        }
+
+        .certificados {
+            height: 100vh;
+            background-image: url(${img});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center -0px;//control de scroll paralax
+            transition: 1s background-position;
+            display: flex;
+            align-items: flex-end;
+            .contenedor {
+                background-color: #FF000099;
+                width: 100%;
+                height: 40%;
+                h2 {
+
+                }
+                .p_u {
+
+                }
+                .p_a {
+
+                }
+            }
+        }
     }
 
 
 
     
+`;
+
+export const Footer = styled.footer`
+    /* .conta {
+
+    } */
+
+    .hacer {
+        height: 100px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            list-style: none;
+            h3 {
+            color: #fff;
+            font-size: 30px;
+            }
+        }
+
+    }
+
+    .ico {
+        height: 100px;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        li {
+            list-style: none;
+            a {
+                display: inline-block;
+                height: 60px;
+                width: 60px;
+                background-color: blueviolet;
+                border-radius: 50%;
+            }
+        }
+
+
+    }
+
+    .copi {
+        background-color: red;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        li {
+            margin-top: 22px;
+            list-style: none;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+    
+
 `;
