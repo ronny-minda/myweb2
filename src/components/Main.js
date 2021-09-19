@@ -3,9 +3,23 @@ import { Main } from './styles/styles';
 import miImg from '../img/halo.jpg';
 
 
-function main() {
+function main(props) {
     return (
-      <Main>
+      <Main 
+        asercaTra={props.asercaTra}
+        asercaOpa={props.asercaOpa}
+
+        proyectosTra={props.proyectosTra}
+        proyectosOpa={props.proyectosOpa}
+
+        certificadosTra={props.certificadosTra}
+        certificadosOpa={props.certificadosOpa}
+        
+        hacerOpa={props.hacerOpa}
+
+        pruebaa={props.pruebaa}
+        
+      >
         <section className="section1">
           <div className="capa1">
 
@@ -26,7 +40,7 @@ function main() {
         </section>
 
 
-        <section className="sobre_mi">
+        <section className="sobre_mi parallax">
 
           <div className="capa1">
             

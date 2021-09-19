@@ -7,6 +7,10 @@ import styled, {
 
 import img from '../../img/halo.jpg'
 
+import serca from '../../img/sobreMi.png'
+
+
+
 export const GlabalStyle = createGlobalStyle`
     * {
         box-sizing: border-box;
@@ -194,6 +198,7 @@ export const Main = styled.main`
     width: 100;
 
     .section1 {
+        
         .capa1 {
             position: relative;
             z-index: 20;
@@ -222,23 +227,82 @@ export const Main = styled.main`
         }
     }
 
+
+
     .sobre_mi {
 
+        background-image: url(${serca});
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center ${(props) => props.pruebaa}%;//control de scroll paralax */
+        transition: 0.05s background-position;
+        
+        .capa1 {
+            filter: opacity(${(props) => props.asercaOpa});
+            transform: translate(0px, ${(props) => props.asercaTra});
+            transition: 2s;
+            .capa2 {
+
+                section {
+                    
+                    h2 {
+
+                    }
+                    p {
+
+                    }
+                }
+            }
+            .icos_tec {
+
+            }
+
+        }
+    }
+
+    .proyectos {
+        position: relative;
+
+        .contenedor {
+            filter: opacity(${(props) => props.proyectosOpa});
+            transform: translate(${(props) => props.proyectosTra}, 0px);
+            transition: 2s filter, 2s transform;
+
+            h2 {
+
+            }
+            .p_u {
+
+            }
+            .p_a {
+
+            }
+        }
+    }
+
+    .certificados {
+        
+        .contenedor {
+
+            h2 {
+
+            }
+            .p_u {
+
+            }
+            .p_a {
+
+            }
+        }
     }
 
     .objetivo {
-        padding-top: 80px;
-        display: flex;
+        filter: opacity(${(props) => props.hacerOpa});
+        transition: 2s filter;
         .contenedor {
-            width: 33vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+
             .ico {
-                height: 150px;
-                width: 150px;
-                background-color: #000;
-                border-radius: 50%;
+
             }
             h3 {
 
@@ -247,9 +311,8 @@ export const Main = styled.main`
 
             }
         }
+        
     }
-
-
 
     
 
@@ -324,12 +387,6 @@ export const Main = styled.main`
             display: flex;
             align-items: flex-end;
 
-            background-image: url(${img});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center -0px;//control de scroll paralax
-            transition: 1s background-position;
-
             .capa1 {
                 height: 70%;
                 width: 100%;
@@ -353,7 +410,7 @@ export const Main = styled.main`
                 .icos_tec {
                     height: 150px;
                     width: 100%;
-                    background-color: blue;
+                    background-color: #4349;
                 }
 
             }
@@ -404,6 +461,29 @@ export const Main = styled.main`
 
                 }
                 .p_a {
+
+                }
+            }
+        }
+
+        .objetivo {
+            padding-top: 80px;
+            display: flex;
+            .contenedor {
+                width: 33vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .ico {
+                    height: 150px;
+                    width: 150px;
+                    background-color: #000;
+                    border-radius: 50%;
+                }
+                h3 {
+
+                }
+                p {
 
                 }
             }
@@ -469,11 +549,7 @@ export const Main = styled.main`
             display: flex;
             align-items: flex-end;
 
-            background-image: url(${img});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center -0px;//control de scroll paralax
-            transition: 1s background-position;
+            
 
             .capa1 {
                 height: 70%;
@@ -498,7 +574,7 @@ export const Main = styled.main`
                 .icos_tec {
                     height: 150px;
                     width: 100%;
-                    background-color: blue;
+                    background-color: #4349;
                 }
 
             }
@@ -552,6 +628,31 @@ export const Main = styled.main`
 
                 }
             }
+        }
+
+        .objetivo {
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            .contenedor {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .ico {
+                    height: 150px;
+                    width: 150px;
+                    background-color: #000;
+                    border-radius: 50%;
+                }
+                h3 {
+
+                }
+                p {
+
+                }
+            }
+            
         }
     }
 
@@ -615,16 +716,11 @@ export const Main = styled.main`
             display: flex;
             align-items: flex-end;
 
-            background-image: url(${img});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center -0px;//control de scroll paralax
-            transition: 1s background-position;
 
             .capa1 {
                 height: 70%;
                 width: 100%;
-                background-color: #ff0099;
+                background-color: #ff000099;
                 border-top: 12px solid red;
                 .capa2 {
                     /* background-color: blue; */
@@ -645,7 +741,7 @@ export const Main = styled.main`
                 .icos_tec {
                     height: 150px;
                     width: 100%;
-                    background-color: blue;
+                    background-color: #4349;
                 }
 
             }
@@ -708,11 +804,20 @@ export const Main = styled.main`
 `;
 
 export const Footer = styled.footer`
+
+
+
+    filter: opacity(100%);
+    transform: translate(-0px, 0px);
+    transition: 1s;
+    
     /* .conta {
 
     } */
 
     .hacer {
+        
+        
         height: 100px;
         background-color: red;
         display: flex;
@@ -759,6 +864,65 @@ export const Footer = styled.footer`
             list-style: none;
             color: #fff;
             font-size: 14px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .hacer {
+            height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                list-style: none;
+                h3 {
+                color: #fff;
+                font-size: 20px;
+                }
+            }
+
+        }
+
+        
+
+
+        .ico {
+            padding: 20px 0;
+            height: auto;
+            background-color: blue;
+            display: flex;
+            flex-wrap: wrap;
+
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+            
+            li {
+                list-style: none;
+                a {
+                    display: inline-block;
+                    height: 60px;
+                    width: 60px;
+                    background-color: blueviolet;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+
+        .copi {
+            background-color: red;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            li {
+                margin-top: 22px;
+                list-style: none;
+                color: #fff;
+                font-size: 12px;
+            }
         }
     }
     
