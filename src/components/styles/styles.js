@@ -6,8 +6,23 @@ import styled, {
 } from "styled-components";
 
 import img from '../../img/halo.jpg'
+import flecha from '../../svg/flecha-hacia-abajo-para-navegar.svg'
 
-import serca from '../../img/sobreMi.png'
+import up from '../../img/imgUp.png'
+import serca from '../../img/sobremi1.png'
+import protecto from '../../img/proyectos.png'
+
+
+import html from '../../svg/tecno/html.svg'
+import cs5 from '../../svg/tecno/css.svg'
+import js from '../../svg/tecno/js.svg'
+import react from '../../svg/tecno/html.svg'
+import sass from '../../svg/tecno/sass.svg'
+import ubuntu from '../../svg/tecno/ubuntu.svg'
+import git from '../../svg/tecno/git.svg'
+import github from '../../svg/tecno/github.svg'
+import halo from '../../svg/tecno/atomic.svg'
+
 
 
 
@@ -18,6 +33,11 @@ export const GlabalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Open Sans', sans-serif;
 
+    }
+
+
+    html {
+        font-size: 62.5%;
     }
     /* @media (max-width: 750px) {
         body {
@@ -199,18 +219,28 @@ export const Main = styled.main`
 
     .section1 {
         
+
+        background-image: url(${up});
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center ${(props) => props.pruebaa}%;//control de scroll paralax */
+        /* transition: 0.05s background-position; */
+        height: 100vh;
+        
         .capa1 {
+            box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
             position: relative;
             z-index: 20;
+            background-color: #2C3347ee;
             .capa2 {
 
                 section {
 
                     h1 {
-
+                        font-size: 5rem;
                     }
                     p {
-
+                        font-size: 2rem;
                     }
                 }
                 img {
@@ -223,28 +253,56 @@ export const Main = styled.main`
                 background-color: blue;
                 position: absolute;
                 bottom: 0;
+
+                background-image: url(${flecha});
+                background-repeat: no-repeat;
+                background-size: cover;
+
+
+
+
+                animation-name: example;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes example {
+                0%   {transform: translate(0px, 0px);}
+
+                50%  {transform: translate(0px, -19px);}
+
+                100% {transform: translate(0px, 0px);}
             }
         }
     }
 
-
-
     .sobre_mi {
+        
+
+        background-color: #fadcd4;
 
         background-image: url(${serca});
         background-repeat: no-repeat;
         background-size: cover;
         /* background-position: center ${(props) => props.pruebaa}%;//control de scroll paralax */
-        transition: 0.05s background-position;
+        /* transition: 0.05s background-position; */
         
         .capa1 {
+            box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+            height: auto;
             filter: opacity(${(props) => props.asercaOpa});
             transform: translate(0px, ${(props) => props.asercaTra});
             transition: 2s;
+            background-color: #161e35ee;
+            border-top: 8px solid #8ac6a0;
+            /* border-top: 12px solid #791c1c; */
             .capa2 {
-
+                padding: 15px 4px;
+                display: flex;
+                justify-content: space-around;
+                color: #fff;
                 section {
-                    
+                    width: 28%;
                     h2 {
 
                     }
@@ -253,7 +311,79 @@ export const Main = styled.main`
                     }
                 }
             }
+            
+            h3 {
+                font-size: 2rem;
+                color: #fff;
+                text-align: center;
+                padding: 15px 0;
+            }
             .icos_tec {
+                height: auto;
+                width: 100%;
+                /* background-color: #4349; */
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                color: #fff;
+
+                .conte {
+                    display: flex;
+                    padding: 15px 0 35px 0;
+                    
+                    div {
+                        height: 80px;
+                        width: 80px;
+                        background-repeat: no-repeat;
+                        /* background-color: red; */
+
+                        border-top: 1px solid #fff;
+                        border-left: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                    }
+                    p {
+                        height: 50px;
+                        width: 90px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 2rem;
+
+                        border-top: 1px solid #fff;
+                        border-right: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                    }
+                    .html {
+                        background-image: url(${html});
+                    }
+                    .css {
+                        background-image: url(${cs5});
+                    }
+                    .javascript {
+                        background-image: url(${js});
+                    }
+                    .javascript1 {
+                        width: 120px;
+                    }
+                    .react {
+                        background-image: url(${halo});
+                    }
+                    .sass {
+                        background-image: url(${sass});
+                    }
+                    .ubuntu {
+                        background-image: url(${ubuntu});
+                    }
+                    .git {
+                        background-image: url(${git});
+                    }
+                    .github {
+                        background-image: url(${github});
+                    }
+                }
+
+                
 
             }
 
@@ -261,21 +391,56 @@ export const Main = styled.main`
     }
 
     .proyectos {
-        position: relative;
+        background-image: url(${protecto});
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center -0px;//control de scroll paralax */
+        /* transition: 1s background-position; */
+        background-color: #262f62;
 
         .contenedor {
+            background-color: #161e35cc;
+            border-left: 8px solid #8ac6a0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 0;
+
             filter: opacity(${(props) => props.proyectosOpa});
             transform: translate(${(props) => props.proyectosTra}, 0px);
             transition: 2s filter, 2s transform;
-
+            
+ 
+            
+            color: #fff;
             h2 {
-
+                font-size: 3.5rem;
+                padding: 12% 10% 1.5% 10%;
             }
             .p_u {
-
+                padding: 1.5% 13% 13% 10%;
+                font-size: 2rem;
+                font-weight: 100;
+                /* width: 80%; */
             }
-            .p_a {
-
+            a {
+                margin: 1.5% 13% 13% 10%;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 160px;
+                font-weight: 100;
+                font-size: 2rem;
+                color: #fff;
+                text-decoration: none;
+                /* background-color: red; */
+                border: 1px solid #fff;
+                border-radius: 5px;
+                transition: 1s border, 1s color;
+            }
+            a:hover {
+                border: 1px solid red;
+                color: red;
             }
         }
     }
@@ -331,12 +496,7 @@ export const Main = styled.main`
 
     @media (min-width: 750px) {
         .section1 {
-            height: 100vh;
-            background-image: url(${img});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center -0px;//control de scroll paralax
-            transition: 1s background-position;
+
             /* filter: opacity(); */
 
 
@@ -350,9 +510,9 @@ export const Main = styled.main`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #FF000099;
+                
                 .capa2 {
-                    background-color: blue;
+                   
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -364,10 +524,10 @@ export const Main = styled.main`
                         align-items: center;
                         color: #fff;
                         h1 {
-                            font-size: 45px;
+
                         }
                         p {
-                            font-size: 17px;
+
                         }
                     }
                     img {
@@ -382,16 +542,16 @@ export const Main = styled.main`
 
 
         .sobre_mi {
-            background-color: grey;
+            
             height: 100vh;
             display: flex;
             align-items: flex-end;
 
             .capa1 {
-                height: 70%;
+                
                 width: 100%;
-                background-color: #ff000099;
-                border-top: 12px solid red;
+                
+                
                 .capa2 {
                     /* background-color: blue; */
                     
@@ -399,34 +559,28 @@ export const Main = styled.main`
                     section {
                         
                         h2 {
-
+                            font-size: 3rem;
                         }
                         p {
-
+                            font-size: 1.3rem;
                         }
                     }
                 }
 
                 .icos_tec {
-                    height: 150px;
-                    width: 100%;
-                    background-color: #4349;
+
                 }
 
             }
         }
 
         .proyectos {
-            height: 90vh;
-            background-image: url(${img});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center -0px;//control de scroll paralax
-            transition: 1s background-position;
+            height: 100vh;
+
             display: flex;
             justify-content: flex-end;
             .contenedor {
-                background-color: #FF000099;
+                
                 width: 40%;
                 height: 100%;
                 h2 {
@@ -451,7 +605,7 @@ export const Main = styled.main`
             display: flex;
             justify-content: flex-start;
             .contenedor {
-                background-color: #FF000099;
+                
                 width: 40%;
                 height: 100%;
                 h2 {
@@ -492,12 +646,7 @@ export const Main = styled.main`
 
     @media (max-width: 750px) {
         .section1 {
-            height: 100vh;
-            background-image: url(${img});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center -0px;//control de scroll paralax
-            transition: 1s background-position;
+
             /* filter: opacity(); */
 
 
@@ -511,9 +660,9 @@ export const Main = styled.main`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #FF000099;
+
                 .capa2 {
-                    background-color: green;
+                    
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
@@ -526,10 +675,10 @@ export const Main = styled.main`
                         align-items: center;
                         color: #fff;
                         h1 {
-                            font-size: 25px;
+
                         }
                         p {
-                            font-size: 12px;
+
                         }
                     }
                     img {
@@ -544,7 +693,7 @@ export const Main = styled.main`
 
 
         .sobre_mi {
-            background-color: grey;
+            
             height: 100vh;
             display: flex;
             align-items: flex-end;
@@ -552,29 +701,31 @@ export const Main = styled.main`
             
 
             .capa1 {
-                height: 70%;
+                heighautot
                 width: 100%;
-                background-color: #ff000099;
-                border-top: 12px solid red;
+               
+                
                 .capa2 {
                     /* background-color: blue; */
                     
                     display: flex;
-                    section {
-                        
-                        h2 {
 
+                    flex-direction: column;
+                    section {
+                        width: 100%;
+                        h2 {
+                            text-align: center;
+                            font-size: 3rem;
                         }
                         p {
-
+                            text-align: center;
+                            font-size: 1.3rem;
                         }
                     }
                 }
 
                 .icos_tec {
-                    height: 150px;
-                    width: 100%;
-                    background-color: #4349;
+
                 }
 
             }
@@ -582,25 +733,25 @@ export const Main = styled.main`
 
         .proyectos {
             height: 100vh;
-            background-image: url(${img});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center -0px;//control de scroll paralax
-            transition: 1s background-position;
+            
             display: flex;
             align-items: flex-end;
             .contenedor {
-                background-color: #FF000099;
+                border-top: 8px solid #8ac6a0;
+                border-left: 0;
+                border-bottom: 0;
+                border-right: 0;
+                background-color: #161e35cc;
                 width: 100%;
-                height: 40%;
+                height: auto;
                 h2 {
 
                 }
                 .p_u {
-
+                    margin-bottom: 0px;
                 }
-                .p_a {
-
+                a {
+                    margin-top: 1px;
                 }
             }
         }
@@ -658,12 +809,7 @@ export const Main = styled.main`
 
     @media (max-width: 400px) {
         .section1 {
-            height: 100vh;
-            background-image: url(${img});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center -0px;//control de scroll paralax
-            transition: 1s background-position;
+
             /* filter: opacity(); */
 
 
@@ -677,9 +823,9 @@ export const Main = styled.main`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #FF000099;
+                /* background-color: #FF000099; */
                 .capa2 {
-                    background-color: red;
+                    /* background-color: red; */
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
@@ -711,37 +857,39 @@ export const Main = styled.main`
 
 
         .sobre_mi {
-            background-color: grey;
+            
             height: 100vh;
             display: flex;
             align-items: flex-end;
 
 
             .capa1 {
-                height: 70%;
+                heighautot
                 width: 100%;
-                background-color: #ff000099;
-                border-top: 12px solid red;
+
+                
                 .capa2 {
                     /* background-color: blue; */
                     
                     display: flex;
+
                     flex-direction: column;
                     section {
-                        
+                        width: 100%;
                         h2 {
-
+                            text-align: center;
+                            /* font-size: 3rem; */
                         }
                         p {
-
+                            text-align: center;
+                            /* font-size: 1.3rem; */
                         }
                     }
                 }
 
                 .icos_tec {
-                    height: 150px;
-                    width: 100%;
-                    background-color: #4349;
+
+
                 }
 
             }
@@ -749,11 +897,7 @@ export const Main = styled.main`
 
         .proyectos {
             height: 100vh;
-            background-image: url(${img});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center -0px;//control de scroll paralax
-            transition: 1s background-position;
+
             display: flex;
             align-items: flex-end;
             .contenedor {

@@ -40,7 +40,7 @@ function main(props) {
         </section>
 
 
-        <section className="sobre_mi parallax">
+        <section className="sobre_mi">
 
           <div className="capa1">
             
@@ -63,7 +63,51 @@ function main(props) {
               </section>
             </div>
 
+            <hr></hr>
+
+            <h3>Y por ultimo las tecnologías que mas utilizo.</h3>
+
             <section className="icos_tec">
+
+              <div className="conte">
+                <div className="html"></div>
+                <p>HTML</p>
+              </div>
+
+              <div className="conte">
+                <div className="css"></div>
+                <p>CSS</p>
+              </div>
+
+              <div className="conte">
+                <div className="javascript"></div>
+                <p className="javascript1">JAVASCRIPT</p>
+              </div>
+
+              <div className="conte">
+                <div className="react"></div>
+                <p>REACT</p>
+              </div>
+
+              <div className="conte">
+                <div className="sass"></div>
+                <p>SASS</p>
+              </div>
+
+              <div className="conte">
+                <div className="ubuntu"></div>
+                <p>UBUNTU</p>
+              </div>
+
+              <div className="conte">
+                <div className="git"></div>
+                <p>GIT</p>
+              </div>
+
+              <div className="conte">
+                <div className="github"></div>
+                <p>GITHUB</p>
+              </div>
 
             </section>
             
@@ -75,11 +119,9 @@ function main(props) {
           <div className="contenedor">
             <h2>Proyectos</h2>
             <p className="p_u">
-              Desarrollo Apps moviles, programas para empresas especialisadas, robotica, Desarrollo Web y más...
+              Portafolio, paginas web o proyectos personales en las que expongo mis conocimientos en todas estas tecnologias en general un presentacion mia.
             </p>
-            <p className="p_a">
-              Las colavoraciones y trabajos realizo se aplican a todas las aréas de trabajo.
-            </p>
+            <a href="#">Ver Trabajos</a>
           </div>
         </section>
 
