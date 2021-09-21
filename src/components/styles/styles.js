@@ -13,6 +13,8 @@ import serca from '../../img/sobremi1.png'
 import protecto from '../../img/proyectos.png'
 import certi from '../../img/certi.png'
 
+import fondoTra from '../../img/mapa.png'
+
 import aplicaciones from '../../svg/hacer/desarrollo-de-aplicaciones.svg'
 import celular from '../../svg/hacer/programacion-celular.svg'
 import responsive from '../../svg/hacer/responsive.svg'
@@ -1306,10 +1308,34 @@ export const Footer = styled.footer`
 export const MainTabajo = styled.main`
     /* margin-top: 120px; */
     padding-top: 60px;
-    h1 {
-        background-color: red;
+
+    .titulo {
+        height: 200px;
+        width: 100%;
+        background-color: #000;
+        background-image: url(${fondoTra});
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            text-align: center;
+            font-size: 3.5rem;
+            margin: 0 0 30px 0;
+        }
+        p {
+            text-align: center;
+            font-size: 2rem;
+        }
     }
+
     ul {
+        box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.50);
+        margin: 30px 0;
         position: relative;
         width: 100%;
         height: 500px;

@@ -8,7 +8,7 @@ function main() {
       <Footer>
 
         {/* <h2 className="conta">Contáctame</h2> */}
-        <ul className="hacer">
+        <ul className="hacer" id="contacto">
             <li>
                 <h3>¡Hagamos que las cosas sucedan!</h3>
             </li>

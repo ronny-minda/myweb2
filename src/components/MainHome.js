@@ -164,7 +164,7 @@ function main(props) {
             
           </div>
 
-          <div className="contenedor" id="contacto">
+          <div className="contenedor">
             <div className="ico3">
               <div className="ico"></div>
             </div>
