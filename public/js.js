@@ -35,6 +35,7 @@ function scrollParallax() {
     const sobre_mi = document.querySelector('.sobre_mi');
     const section1 = document.querySelector('.section1');
     const proyectos = document.querySelector('.proyectos');
+    const certificados = document.querySelector('.certificados');
     
     // parallax.style.transform = 'translateY('+ scrollTop * 0.1 + 'px)';
 
@@ -47,6 +48,7 @@ function scrollParallax() {
     section1.style.backgroundPosition = `center ${(scrollTop * 0.8)}px`;
     sobre_mi.style.backgroundPosition = `center ${(1000-scrollTop) * -0.6}px`;
     proyectos.style.backgroundPosition = `center ${(1500-scrollTop) * -0.4}px`;
+    certificados.style.backgroundPosition = `center ${(2200-scrollTop) * -0.4}px`;
     
 
     

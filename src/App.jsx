@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
 import Header from './components/Header';
-import Main from './components/Main';
+import MainHome from './components/MainHome';
+import Trabajos from './components/trabajos';
+import Certificados from './components/certificados';
 import Footer from './components/Footer';
 
     
@@ -62,19 +71,14 @@ import Footer from './components/Footer';
           });
         }
 
-        if(scroll >= 1288){
+        if(scroll >= 1671){
           this.setState({
             certificadosTra: '0px',
             certificadosOpa: '100%',
           });
         }
 
-        if(scroll >= 1288){
-          this.setState({
-            certificadosTra: '0px',
-            certificadosOpa: '100%',
-          });
-        }
+
 
         if(scroll >= 1988){
           this.setState({
@@ -123,26 +127,78 @@ import Footer from './components/Footer';
 
     render() {
       return (
-      <>
+      <Router>
+
         <Header/>
-        <Main 
-          asercaTra={this.state.asercaTra}
-          asercaOpa={this.state.asercaOpa}
 
-          proyectosTra={this.state.proyectosTra}
-          proyectosOpa={this.state.proyectosOpa}
+        <Switch>
 
-          certificadosTra={this.state.certificadosTra}
-          certificadosOpa={this.state.certificadosOpa}
+        <Route exact path="/">
           
-          hacerOpa={this.state.hacerOpa}
+          <MainHome 
+            asercaTra={this.state.asercaTra}
+            asercaOpa={this.state.asercaOpa}
+
+            proyectosTra={this.state.proyectosTra}
+            proyectosOpa={this.state.proyectosOpa}
+
+            certificadosTra={this.state.certificadosTra}
+            certificadosOpa={this.state.certificadosOpa}
+            
+            hacerOpa={this.state.hacerOpa}
 
 
-          pruebaa={this.state.pruebaa}
-        />
-        {/* <h1>{this.state.dark}</h1> */}
+            pruebaa={this.state.pruebaa}
+          />
+
+        </Route>
+
+
+
+        <Route exact path="/inicio/">
+          
+          <MainHome 
+            asercaTra={this.state.asercaTra}
+            asercaOpa={this.state.asercaOpa}
+
+            proyectosTra={this.state.proyectosTra}
+            proyectosOpa={this.state.proyectosOpa}
+
+            certificadosTra={this.state.certificadosTra}
+            certificadosOpa={this.state.certificadosOpa}
+            
+            hacerOpa={this.state.hacerOpa}
+
+
+            pruebaa={this.state.pruebaa}
+          />
+
+        </Route>
+
+
+
+          
+
+          <Route exact path="/trabajos/">
+            <Trabajos/>
+          </Route>
+
+          <Route exact path="/certificados/">
+            <Certificados/>
+          </Route>
+
+
+          
+
+        </Switch>
+        
+        
+
+
+
         <Footer/>
-      </>
+
+      </Router>
       )
     }
   }

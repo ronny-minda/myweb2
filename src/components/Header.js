@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { HEader } from './styles/styles';
 
 function Header() {
@@ -55,27 +56,27 @@ function Header() {
     return (
       <>
         <HEader menu={estado}>
-            <a className="a" href="#">
+            <Link className="a" to="/inicio/">
                 <h1>MICHAEL MINDA</h1>
-            </a>
+            </Link>
 
             <div className="nav_blur" onClick={cambio}></div>
 
             <nav>
                 <li className="Inicio">
-                    <a  href="#">
+                    <Link  to="/inicio/">
                         Inicio
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="Trabajos">
-                    <a  href="#">
+                    <Link  to="/trabajos/">
                         Trabajos   
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="Contacto">
-                    <a  href="#">
+                    <a  href="#contacto">
                         Contacto   
                     </a>
                 </li>

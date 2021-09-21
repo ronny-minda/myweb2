@@ -1,11 +1,12 @@
 
-import { Main } from './styles/styles';
+import { Link } from 'react-router-dom';
+import { MainHome } from './styles/styles';
 import miImg from '../img/halo.jpg';
 
 
 function main(props) {
     return (
-      <Main 
+      <MainHome 
         asercaTra={props.asercaTra}
         asercaOpa={props.asercaOpa}
 
@@ -61,6 +62,7 @@ function main(props) {
                   Tambien tengo conocimientos en JAVA y C++ ya que estos son los lenguajes que aprendi en el ITB desde algo tan basico como if else hasta programacion orientada a objetos como abstraccion, polimorfismo etc.
                 </p>
               </section>
+              
             </div>
 
             <hr></hr>
@@ -110,6 +112,8 @@ function main(props) {
               </div>
 
             </section>
+
+            <div className="flecha_abajo">a</div>
             
           </div>
 
@@ -121,7 +125,7 @@ function main(props) {
             <p className="p_u">
               Portafolio, paginas web o proyectos personales en las que expongo mis conocimientos en todas estas tecnologias en general un presentacion mia.
             </p>
-            <a href="#">Ver Trabajos</a>
+            <Link to="/trabajos/">Ver Trabajos</Link>
           </div>
         </section>
 
@@ -130,18 +134,18 @@ function main(props) {
           <div className="contenedor">
             <h2>Certificados</h2>
             <p className="p_u">
-              Desarrollo Apps moviles, programas para empresas especialisadas, robotica, Desarrollo Web y más...
+              *Portafolio, paginas web o proyectos personales en las que expongo mis conocimientos en todas estas tecnologias en general un presentacion mia.*
             </p>
-            <p className="p_a">
-              Las colavoraciones y trabajos realizo se aplican a todas las aréas de trabajo.
-            </p>
+            <Link to="/certificados/">Ver Certificados</Link>
           </div>
         </section>
 
 
         <section className="objetivo">
           <div className="contenedor">
-            <div className="ico"></div>
+            <div className="ico1">
+              <div className="ico"></div>
+            </div>
             <h3>Responsie Desing</h3>
             <p>
               El Responsive Design o diseño adaptativo, es la técnica que se usa en la actualidad para tener una misma web adaptada a las diferentes plataformas que nos brinda la tecnología: ordenador, tablet y Smartphone.
@@ -150,17 +154,21 @@ function main(props) {
           </div>
 
           <div className="contenedor">
-            <div className="ico"></div>
-            <h3>CODIGO SEMANTICO</h3>
+            <div className="ico2">
+              <div className="ico"></div>
+            </div>
+            <h3>Codigo Semantico</h3>
             <p>
               Los motores de búsqueda analizan el código para saber qué clase de contenido muestran y así, saber cómo mostrarlo.
             </p>
             
           </div>
 
-          <div className="contenedor">
-            <div className="ico"></div>
-            <h3>APLICACIONES ESCALABLES</h3>
+          <div className="contenedor" id="contacto">
+            <div className="ico3">
+              <div className="ico"></div>
+            </div>
+            <h3>Aplicaciones Escalables</h3>
             <p>
               Se asegura que su aplicacion pueda crecer sin verse comprometido el rendimiento de la misma.
             </p>
@@ -170,7 +178,7 @@ function main(props) {
 
         {/* <h2 className="conta">Contáctame</h2> */}
 
-      </Main>
+      </MainHome>
     );
 }
 
