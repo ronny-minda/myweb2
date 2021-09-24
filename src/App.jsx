@@ -32,6 +32,9 @@ import Footer from './components/Footer';
         //SECCION HACER
         hacerOpa: '0%',
 
+
+        prueba: 'siii',
+
         
 
 
@@ -129,7 +132,7 @@ import Footer from './components/Footer';
       return (
       <Router>
 
-        <Header/>
+        <Header prueba={this.state.prueba}/>
 
         <Switch>
 

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { MainHome } from './styles/styles';
 import miImg from '../img/halo.jpg';
 
+import Typed from 'react-typed';
+
 
 function main(props) {
     return (
@@ -27,7 +29,17 @@ function main(props) {
             <div className="capa2">
               <section>
                 <h1>Michael Minda</h1>
-                <p>Desarrollador Front end</p>
+                <p>Desarrollado
+                  <Typed
+                      strings={[
+                          'r Front End',
+                          'r WEB',
+                          'r junior']}
+                          typeSpeed={100}
+                          backSpeed={50}
+                          loop >
+                  </Typed>
+                </p>
               </section>
               
               <img src={ miImg } alt="Michael Minda Vera"></img>

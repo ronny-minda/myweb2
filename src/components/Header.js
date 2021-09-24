@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HEader } from './styles/styles';
 
-function Header() {
+function Header(props) {
 
     const [estado, setEstado] = useState({
         menu: '0%',
@@ -17,8 +17,23 @@ function Header() {
         display: 'none'
     })
 
+
+    // const [activo, setActivo] = useState({
+    //     inicio: '0%',
+    //     trabajo: '',
+    // })
+        var URLactual = window.location.href;
+        
     function cambio() {
-        console.log('siii');
+        // props.prueba = 'nooo'
+        
+
+        if (URLactual === 'http://localhost:3000/trabajos/') {
+            console.log('ruta')
+        }
+
+
+        // console.log('siii');
         if(estado.menu === '60%'){
             setEstado ({
                 menu: '0%',
@@ -64,21 +79,21 @@ function Header() {
 
             <nav>
                 <li className="Inicio">
-                    <Link  to="/inicio/">
-                        Inicio
+                    <Link className={ URLactual === 'http://localhost:3000/inicio/' && 'aActivo'  } to="/inicio/">
+                        <span>Inicio</span>
                     </Link>
                 </li>
 
                 <li className="Trabajos">
-                    <Link  to="/trabajos/">
-                        Trabajos   
+                    <Link className={ URLactual === 'http://localhost:3000/trabajos/' && 'aActivo'  } to="/trabajos/">
+                        <span>Trabajos</span>
                     </Link>
                 </li>
 
                 <li className="Contacto">
-                    <a  href="#contacto">
-                        Contacto   
-                    </a>
+                    <Link className={ URLactual === 'http://localhost:3000/certificados/' && 'aActivo'  } to="/certificados/">
+                        <span>Certficados</span>
+                    </Link>
                 </li>
             </nav>
 
@@ -89,6 +104,12 @@ function Header() {
                     <div className="bar3"></div>
                 </div>
             </div>
+
+            {/* <div ></div> */}
+
+            <a href="#" target="_blank" rel="noopener noreferrer" title="Platzi" className="CV">
+                CV⤓
+            </a>
 
             
         </HEader>
