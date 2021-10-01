@@ -7,12 +7,12 @@ function Header(props) {
 
     const [estado, setEstado] = useState({
         menu: '0%',
-        inicioT: '-10px',
-        trabajoT: '-10px',
-        contactoT: '-10px',
-        inicioL: '-10px',
-        trabajoL: '-10px',
-        contactoL: '-10px',
+        inicioT: '-20px',
+        trabajoT: '-20px',
+        contactoT: '-20px',
+        inicioL: '-20px',
+        trabajoL: '-20px',
+        contactoL: '-20px',
         blur: '0px',
         display: 'none'
     })
@@ -37,12 +37,12 @@ function Header(props) {
         if(estado.menu === '60%'){
             setEstado ({
                 menu: '0%',
-                inicioT: '-10px',
-                trabajoT: '-10px',
-                contactoT: '-10px',
-                inicioL: '-10px',
-                trabajoL: '-10px',
-                contactoL: '-10px',
+                inicioT: '-20px',
+                trabajoT: '-20px',
+                contactoT: '-20px',
+                inicioL: '-20px',
+                trabajoL: '-20px',
+                contactoL: '-20px',
                 blur: '0px',
                 display: 'none'
             })
@@ -51,10 +51,10 @@ function Header(props) {
                 menu: '60%',
                 inicioT: '50px',
                 trabajoT: '130px',
-                contactoT: '200px',
-                inicioL: '200px',
-                trabajoL: '150px',
-                contactoL: '50px',
+                contactoT: '220px',
+                inicioL: '130px',
+                trabajoL: '100px',
+                contactoL: '30px',
                 blur: '3px',
                 display: 'block'
             })
@@ -79,26 +79,32 @@ function Header(props) {
 
             <nav>
                 <li className="Inicio">
-                    <Link className={ URLactual === 'http://localhost:3000/inicio/' && 'aActivo'  } to="/inicio/">
+                    <Link className={ (URLactual === 'http://localhost:3000/' || URLactual === 'http://localhost:3000/inicio/') && 'aActivo'  } to="/inicio/" onClick={cambio}>
                         <span>Inicio</span>
                     </Link>
                 </li>
 
                 <li className="Trabajos">
-                    <Link className={ URLactual === 'http://localhost:3000/trabajos/' && 'aActivo'  } to="/trabajos/">
+                    <Link className={ URLactual === 'http://localhost:3000/trabajos/' && 'aActivo'  } to="/trabajos/" onClick={cambio}>
                         <span>Trabajos</span>
                     </Link>
                 </li>
 
                 <li className="Contacto">
-                    <Link className={ URLactual === 'http://localhost:3000/certificados/' && 'aActivo'  } to="/certificados/">
+                    <Link className={ URLactual === 'http://localhost:3000/certificados/' && 'aActivo'  } to="/certificados/" onClick={cambio}>
                         <span>Certficados</span>
+                    </Link>
+                </li>
+
+                <li className="Certificado">
+                    <Link className={ URLactual === 'http://localhost:3000/contacto/' && 'aActivo'  } to="/contacto/" onClick={cambio}>
+                        <span>Contacto</span>
                     </Link>
                 </li>
             </nav>
 
-            <div className="btn_conte">
-                <div className="btn" onClick={cambio}>
+            <div className="btn_conte" onClick={cambio}>
+                <div className="btn">
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>
@@ -107,7 +113,7 @@ function Header(props) {
 
             {/* <div ></div> */}
 
-            <a href="#" target="_blank" rel="noopener noreferrer" title="Platzi" className="CV">
+            <a href="../assets/CurriculumRonnyMinda.pdf" target="_blank" rel="noopener noreferrer" title="Platzi" className="CV" download>
                 CV⤓
             </a>
 

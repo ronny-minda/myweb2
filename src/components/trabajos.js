@@ -25,7 +25,7 @@ function Trabajos() {
         <MainTabajo>
             <section className="titulo">
                 <h2>TRABAJOS</h2>
-                <p>Estos son unos de los proyectos que tengo o los mejores de mi repositorio y aun sigo haciendo nuevas cosas para la web, ultimamente estoy utilizando React y luego por Node.</p>
+                <p>Estos son unos de los proyectos que tengo o los mejores de mi repositorio y aun sigo haciendo nuevas cosas, experimentando y aprendiendo para la web, ultimamente estoy utilizando React y luego por Node.</p>
             </section>
             
             {/* Darksouls */}
@@ -399,6 +399,14 @@ function Trabajos() {
             </ul>
 
 
+
+
+
+
+            <div className="sobre_mi"></div>
+          <div className="section1"></div>
+          <div className="proyectos"></div>
+          <div className="certificados"></div>
 
 
 

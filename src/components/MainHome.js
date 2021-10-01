@@ -7,8 +7,17 @@ import Typed from 'react-typed';
 
 
 function main(props) {
+
+
+
+    function handleScroll() {
+    console.log('handleScroll!!!!')
+    }
+
+
     return (
       <MainHome 
+      onScroll={handleScroll}
         asercaTra={props.asercaTra}
         asercaOpa={props.asercaOpa}
 
@@ -188,7 +197,10 @@ function main(props) {
           </div>
         </section>
 
-        {/* <h2 className="conta">Contáctame</h2> */}
+        { 
+
+        
+        }
 
       </MainHome>
     );

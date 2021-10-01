@@ -167,6 +167,11 @@ function Certificados() {
 
           </section>
 
+          <div className="sobre_mi"></div>
+          <div className="section1"></div>
+          <div className="proyectos"></div>
+          <div className="certificados"></div>
+
           
 
       </MainCertificado>

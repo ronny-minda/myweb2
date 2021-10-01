@@ -6,17 +6,76 @@ import {
   Route,
 } from "react-router-dom";
 
+import { GlabalStyle } from './components/styles/styles';
+
 import Header from './components/Header';
 import MainHome from './components/MainHome';
 import Trabajos from './components/trabajos';
 import Certificados from './components/certificados';
 import Footer from './components/Footer';
+import Contacto from './components/contacto';
+import Loader from './components/LoaderScreen';
 
     
   class App extends React.Component {
 
     constructor(props) {
       super(props);
+
+
+      window.addEventListener('scroll', function scrollParallax() {
+
+      console.log(URLactual == 'http://localhost:3000/' || URLactual == 'http://localhost:3000/inicio/')
+
+  
+
+      console.log('URLactual: '+URLactual)
+
+      const scrollTop = document.documentElement.scrollTop;
+  
+      const sobre_mi = document.querySelector('.sobre_mi');
+      const section1 = document.querySelector('.section1');
+      const proyectos = document.querySelector('.proyectos');
+      const certificados = document.querySelector('.certificados');
+      
+      // parallax.style.transform = 'translateY('+ scrollTop * 0.1 + 'px)';
+  
+      // parallax.style.transform = 'translateY('+ scrollTop * 0.1 + 'px)';
+  
+      // scrollTop = -scrollTop;
+  
+      // sobre_mi.style.backgroundPosition = `center ${(-500+scrollTop) * 0.2}px`;
+  
+      section1.style.backgroundPosition = `center ${(scrollTop * 0.8)}px`;
+      sobre_mi.style.backgroundPosition = `center ${(1000-scrollTop) * -0.6}px`;
+      proyectos.style.backgroundPosition = `center ${(1500-scrollTop) * -0.4}px`;
+      certificados.style.backgroundPosition = `center ${(2200-scrollTop) * -0.4}px`;
+      
+  
+      
+      console.log(scrollTop)
+
+      
+
+      
+
+
+
+      
+    })
+
+    var URLactual = window.location.href;
+    
+    
+
+    // if(URLactual === 'http://localhost:3000/' || URLactual === 'http://localhost:3000/inicio/') {
+    //    scrollParallax)
+    //   console.log('App: '+URLactual)
+    // }
+    
+    
+
+
     
       this.state = {
         scroll: 0,
@@ -35,11 +94,48 @@ import Footer from './components/Footer';
 
         prueba: 'siii',
 
+        etiqueta: 'etiqueta',
+        hojas: 'hojas',
+        opacy: '100',
+        display: 'flex'
+
+
         
-
-
-        pruebaa: 0
       }
+
+
+
+
+      setTimeout( () => {
+        this.setState({
+          etiqueta: 'etiqueta etiquetaActivo',
+          hojas: 'hojas hojasActivo'
+        });
+      }, 100);
+
+      setTimeout( () => {
+        this.setState({
+          etiqueta: 'etiqueta etiquetaActivo etiquetaColor',
+          hojas: 'hojas hojasActivo hojasColor'
+        });
+      }, 3000);
+
+      setTimeout( () => {
+        this.setState({
+          opacy: '0',
+        });
+      }, 6000);
+
+      setTimeout( () => {
+        this.setState({
+
+          display: 'none'
+        });
+      }, 7000);
+
+
+
+
 
       window.addEventListener('scroll', (e) => {
 
@@ -132,7 +228,16 @@ import Footer from './components/Footer';
       return (
       <Router>
 
+      <GlabalStyle/>
+
         <Header prueba={this.state.prueba}/>
+
+        <Loader 
+          etiqueta={this.state.etiqueta}
+          hojas={this.state.hojas}
+          opacy={this.state.opacy}
+          display={this.state.display}
+        />
 
         <Switch>
 
@@ -188,6 +293,10 @@ import Footer from './components/Footer';
 
           <Route exact path="/certificados/">
             <Certificados/>
+          </Route>
+
+          <Route exact path="/contacto/">
+            <Contacto/>
           </Route>
 
 
