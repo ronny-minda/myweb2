@@ -1,7 +1,4 @@
 import styled, {
-    css,
-    keyframes,
-    ThemeProvider,
     createGlobalStyle,
 } from "styled-components";
 
@@ -33,7 +30,6 @@ import platzi from '../../svg/PLATZI.svg'
 import html from '../../svg/tecno/html.svg'
 import cs5 from '../../svg/tecno/css.svg'
 import js from '../../svg/tecno/js.svg'
-import react from '../../svg/tecno/html.svg'
 import sass from '../../svg/tecno/sass.svg'
 import ubuntu from '../../svg/tecno/ubuntu.svg'
 import git from '../../svg/tecno/git.svg'

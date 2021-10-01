@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import axios from 'axios';
 import { MainFormulario as Main } from './styles/styles';
 // import { Link } from 'react-router-dom';
@@ -30,8 +30,8 @@ class Contacto extends React.Component {
   }
 
   async componentDidMount() {
-    const res = await axios.get('http://localhost:4000/halo');
-    console.log(res.data);
+    const res = await axios.get('https://apimiweb.herokuapp.com/api/halo');
+    console.log('Server listo: ' + res.data.success);
   }
 
   onSubmit = async e => {
@@ -42,18 +42,18 @@ class Contacto extends React.Component {
       email1: false,
       mensaje1: false,
     })
-    console.log('enviado') 
-    let a = await axios.post('http://localhost:4000/email', {
+    // console.log('enviado')
+    let respuesta = await axios.post('https://apimiweb.herokuapp.com/api/email', {
       nombre: this.state.nombre,
       email: this.state.email,
       mensaje: this.state.mensaje
     })
 
     // const res = await axios.get('http://localhost:4000/email');
-    console.log(a.data);
+    console.log('Correo enviado: ' + respuesta.data.success);
 
     this.setState({
-      envioExito: a.data
+      envioExito: respuesta.data
     })
 
 
@@ -84,7 +84,7 @@ class Contacto extends React.Component {
     let email = expresiones.correo.test(this.state.email);
     let mensaje = expresiones.mensaje.test(this.state.mensaje);
 
-    console.log('nombre:qqq '+nombre)
+    // console.log('nombre:qqq '+nombre)
 
     this.setState({
       nombre1: nombre,

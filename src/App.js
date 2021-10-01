@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import {
   BrowserRouter as Router,
@@ -19,17 +19,46 @@ import Loader from './components/LoaderScreen';
     
   class App extends React.Component {
 
+    componentDidMount() {
+      setTimeout( () => {
+        this.setState({
+          etiqueta: 'etiqueta etiquetaActivo',
+          hojas: 'hojas hojasActivo'
+        });
+      }, 100);
+
+      setTimeout( () => {
+        this.setState({
+          etiqueta: 'etiqueta etiquetaActivo etiquetaColor',
+          hojas: 'hojas hojasActivo hojasColor'
+        });
+      }, 3000);
+
+      setTimeout( () => {
+        this.setState({
+          opacy: '0',
+        });
+      }, 6000);
+
+      setTimeout( () => {
+        this.setState({
+
+          display: 'none'
+        });
+      }, 7000);
+    }
+
     constructor(props) {
       super(props);
 
 
       window.addEventListener('scroll', function scrollParallax() {
 
-      console.log(URLactual == 'http://localhost:3000/' || URLactual == 'http://localhost:3000/inicio/')
+      // console.log(URLactual === 'http://localhost:3000/' || URLactual === 'http://localhost:3000/inicio/')
 
   
 
-      console.log('URLactual: '+URLactual)
+      // console.log('URLactual: '+URLactual)
 
       const scrollTop = document.documentElement.scrollTop;
   
@@ -53,10 +82,10 @@ import Loader from './components/LoaderScreen';
       
   
       
-      console.log(scrollTop)
+      // console.log(scrollTop)
 
       
-
+      
       
 
 
@@ -103,35 +132,12 @@ import Loader from './components/LoaderScreen';
         
       }
 
+     
 
 
+      
 
-      setTimeout( () => {
-        this.setState({
-          etiqueta: 'etiqueta etiquetaActivo',
-          hojas: 'hojas hojasActivo'
-        });
-      }, 100);
-
-      setTimeout( () => {
-        this.setState({
-          etiqueta: 'etiqueta etiquetaActivo etiquetaColor',
-          hojas: 'hojas hojasActivo hojasColor'
-        });
-      }, 3000);
-
-      setTimeout( () => {
-        this.setState({
-          opacy: '0',
-        });
-      }, 6000);
-
-      setTimeout( () => {
-        this.setState({
-
-          display: 'none'
-        });
-      }, 7000);
+      
 
 
 
@@ -219,9 +225,13 @@ import Loader from './components/LoaderScreen';
 
       });
     }
+    
+
+    
+   
 
     Prueba = () => {
-      console.log('pruebas')
+      // console.log('pruebas')
     }
 
     render() {

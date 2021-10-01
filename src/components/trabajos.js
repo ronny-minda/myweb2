@@ -3,10 +3,8 @@ import { MainTabajo } from './styles/styles';
 
 import dark from '../img/imgTrabajos/page_darksouls.png'
 import nutri from '../img/imgTrabajos/page_Nutricionista.png'
-import page2 from '../img/imgTrabajos/pagePortafolio.png'
 import form from '../img/imgTrabajos/formulario.png'
 import boda from '../img/imgTrabajos/page_boda.png'
-import actual from '../img/imgTrabajos/primer_page.png'//mmmm
 import segundaWeb from '../img/imgTrabajos/pagePortafolio.png'
 import terjeta from '../img/imgTrabajos/tarjeta.png'
 import actual1 from '../img/imgTrabajos/page_actual.png'
@@ -366,13 +364,13 @@ function Trabajos() {
 
                         <div className="conte">
 
-                            <a href="" target="_blank" rel="noopener noreferrer">
+                            <a href="http://ronny-minda.github.io/" target="_blank" rel="noopener noreferrer">
                                 <span>
                                     Disponible en
                                 </span>
                                 <div className="ico"></div>
                             </a>
-                            <a href="" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/ronny-minda/ronny-minda.github.io" target="_blank" rel="noopener noreferrer">
                                 <span>
                                     GitHub
                                 </span>

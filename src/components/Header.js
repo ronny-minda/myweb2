@@ -29,7 +29,7 @@ function Header(props) {
         
 
         if (URLactual === 'http://localhost:3000/trabajos/') {
-            console.log('ruta')
+            // console.log('ruta')
         }
 
 
@@ -79,25 +79,25 @@ function Header(props) {
 
             <nav>
                 <li className="Inicio">
-                    <Link className={ (URLactual === 'http://localhost:3000/' || URLactual === 'http://localhost:3000/inicio/') && 'aActivo'  } to="/inicio/" onClick={cambio}>
+                    <Link className={ (URLactual === 'http://localhost:3000/' || URLactual === 'http://localhost:3000/inicio/') ? 'aActivo' : '' } to="/inicio/" onClick={cambio}>
                         <span>Inicio</span>
                     </Link>
                 </li>
 
                 <li className="Trabajos">
-                    <Link className={ URLactual === 'http://localhost:3000/trabajos/' && 'aActivo'  } to="/trabajos/" onClick={cambio}>
+                    <Link className={ URLactual === 'http://localhost:3000/trabajos/' ? 'aActivo' : '' } to="/trabajos/" onClick={cambio}>
                         <span>Trabajos</span>
                     </Link>
                 </li>
 
                 <li className="Contacto">
-                    <Link className={ URLactual === 'http://localhost:3000/certificados/' && 'aActivo'  } to="/certificados/" onClick={cambio}>
+                    <Link className={ URLactual === 'http://localhost:3000/certificados/' ? 'aActivo' : ''  } to="/certificados/" onClick={cambio}>
                         <span>Certficados</span>
                     </Link>
                 </li>
 
                 <li className="Certificado">
-                    <Link className={ URLactual === 'http://localhost:3000/contacto/' && 'aActivo'  } to="/contacto/" onClick={cambio}>
+                    <Link className={ URLactual === 'http://localhost:3000/contacto/' ? 'aActivo' : '' } to="/contacto/" onClick={cambio}>
                         <span>Contacto</span>
                     </Link>
                 </li>

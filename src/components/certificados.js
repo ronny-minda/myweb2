@@ -58,7 +58,7 @@ function Certificados() {
       }
 
 
-      console.log('siiiiiiii')
+      // console.log('siiiiiiii')
     }
 
     function img1() {
