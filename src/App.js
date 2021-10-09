@@ -93,7 +93,7 @@ import Loader from './components/LoaderScreen';
       
     })
 
-    var URLactual = window.location.href;
+    // var URLactual = window.location.href;
     
     
 

@@ -190,13 +190,13 @@ function Trabajos() {
 
                         <div className="conte">
 
-                            <a href="https://ronny-minda.github.io/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://ronny-minda-anterior-web.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                 <span>
                                     Disponible en
                                 </span>
                                 <div className="ico"></div>
                             </a>
-                            <a href="https://github.com/ronny-minda/ronny-minda.github.io" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/ronny-minda/Anterior_pagina_portafolio/" target="_blank" rel="noopener noreferrer">
                                 <span>
                                     GitHub
                                 </span>
@@ -357,7 +357,7 @@ function Trabajos() {
 
                     <div className="contenedor_disponible">
 
-                        <h2>Pagina Nutricionista</h2>
+                        <h2>Pagina Actual</h2>
                         <p>
                             Mi pagina Web actual o portafolio en la que muestro la payoria de cosas que hago para la Web(uso de styled components).
                         </p>

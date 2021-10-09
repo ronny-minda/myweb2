@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HEader } from './styles/styles';
+import curri from '../assets/CurriculumRonnyMinda.pdf';
 
 function Header(props) {
 
@@ -113,7 +114,7 @@ function Header(props) {
 
             {/* <div ></div> */}
 
-            <a href="../assets/CurriculumRonnyMinda.pdf" target="_blank" rel="noopener noreferrer" title="Platzi" className="CV" download>
+            <a href={ curri } target="_blank" rel="noopener noreferrer" title="Platzi" className="CV" download>
                 CV⤓
             </a>
 
