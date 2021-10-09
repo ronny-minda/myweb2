@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { MainHome } from './styles/styles';
-import miImg from '../img/halo.jpg';
+import miImg from '../img/PERFIL.png';
 
 import Typed from 'react-typed';
 
@@ -51,7 +51,10 @@ function main(props) {
                 </p>
               </section>
               
-              <img src={ miImg } alt="Michael Minda Vera"></img>
+              <div className="conte_img">
+                <img src={ miImg } alt="Michael Minda Vera"></img>
+              </div>
+              
             </div>
 
             <div className="flecha_abajo"></div>

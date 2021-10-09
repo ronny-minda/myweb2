@@ -388,7 +388,8 @@ export const MainHome = styled.main`
                     }
                 }
                 img {
-
+                    fill-opacity: 50%;
+                    
                 }
             }
             .flecha_abajo {
@@ -820,12 +821,18 @@ export const MainHome = styled.main`
 
                         }
                     }
-                    img {
-                        height: 100%;
-                        width: 400px;
-                        object-fit: cover;
+                    .conte_img {
+                        background-color: #081830;
                         border-radius: 50%;
+                        img {
+                            opacity: 70%;
+                            height: 100%;
+                            width: 400px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
                     }
+                    
                 }
             }
         }
