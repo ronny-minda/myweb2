@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.410f6de2.chunk.js",
-    "main.js.map": "/static/js/main.410f6de2.chunk.js.map",
+    "main.js": "/static/js/main.58124215.chunk.js",
+    "main.js.map": "/static/js/main.58124215.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.62000460.js",
     "runtime-main.js.map": "/static/js/runtime-main.62000460.js.map",
     "static/js/2.5d7488a3.chunk.js": "/static/js/2.5d7488a3.chunk.js",
     "static/js/2.5d7488a3.chunk.js.map": "/static/js/2.5d7488a3.chunk.js.map",
     "index.html": "/index.html",
     "static/js/2.5d7488a3.chunk.js.LICENSE.txt": "/static/js/2.5d7488a3.chunk.js.LICENSE.txt",
+    "static/media/CurriculumRonnyMinda.0e6fb085.pdf": "/static/media/CurriculumRonnyMinda.0e6fb085.pdf",
+    "static/media/PERFIL.1d674345.png": "/static/media/PERFIL.1d674345.png",
     "static/media/PLATZI.0e5c7dd4.svg": "/static/media/PLATZI.0e5c7dd4.svg",
     "static/media/atomic.5c170d9e.svg": "/static/media/atomic.5c170d9e.svg",
     "static/media/bootstrap.3de2e5e3.svg": "/static/media/bootstrap.3de2e5e3.svg",
@@ -39,7 +41,7 @@
     "static/media/node.6518214b.svg": "/static/media/node.6518214b.svg",
     "static/media/pagePortafolio.392adca5.png": "/static/media/pagePortafolio.392adca5.png",
     "static/media/page_Nutricionista.998c7376.png": "/static/media/page_Nutricionista.998c7376.png",
-    "static/media/page_actual.f6466e8a.png": "/static/media/page_actual.f6466e8a.png",
+    "static/media/page_actual.827e778d.png": "/static/media/page_actual.827e778d.png",
     "static/media/page_boda.c5310c6f.png": "/static/media/page_boda.c5310c6f.png",
     "static/media/page_darksouls.d173d95a.png": "/static/media/page_darksouls.d173d95a.png",
     "static/media/preprocesadores.3a048ecc.jpg": "/static/media/preprocesadores.3a048ecc.jpg",
@@ -54,6 +56,6 @@
   "entrypoints": [
     "static/js/runtime-main.62000460.js",
     "static/js/2.5d7488a3.chunk.js",
-    "static/js/main.410f6de2.chunk.js"
+    "static/js/main.58124215.chunk.js"
   ]
 }
