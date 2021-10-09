@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/static/js/main.58124215.chunk.js",
-    "main.js.map": "/static/js/main.58124215.chunk.js.map",
+    "main.js": "/static/js/main.5b589fa9.chunk.js",
+    "main.js.map": "/static/js/main.5b589fa9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.62000460.js",
     "runtime-main.js.map": "/static/js/runtime-main.62000460.js.map",
     "static/js/2.5d7488a3.chunk.js": "/static/js/2.5d7488a3.chunk.js",
     "static/js/2.5d7488a3.chunk.js.map": "/static/js/2.5d7488a3.chunk.js.map",
     "index.html": "/index.html",
     "static/js/2.5d7488a3.chunk.js.LICENSE.txt": "/static/js/2.5d7488a3.chunk.js.LICENSE.txt",
-    "static/media/CurriculumRonnyMinda.0e6fb085.pdf": "/static/media/CurriculumRonnyMinda.0e6fb085.pdf",
+    "static/media/CurriculumRonnyMinda.1ff67561.pdf": "/static/media/CurriculumRonnyMinda.1ff67561.pdf",
     "static/media/PERFIL.1d674345.png": "/static/media/PERFIL.1d674345.png",
     "static/media/PLATZI.0e5c7dd4.svg": "/static/media/PLATZI.0e5c7dd4.svg",
     "static/media/atomic.5c170d9e.svg": "/static/media/atomic.5c170d9e.svg",
@@ -56,6 +56,6 @@
   "entrypoints": [
     "static/js/runtime-main.62000460.js",
     "static/js/2.5d7488a3.chunk.js",
-    "static/js/main.58124215.chunk.js"
+    "static/js/main.5b589fa9.chunk.js"
   ]
 }
