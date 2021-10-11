@@ -86,20 +86,23 @@ export const GlabalStyle = createGlobalStyle`
 
     body::-webkit-scrollbar {
         width: 10px;
-        background-color: #060B1A;
+        background-color: #0C0C0F;
 
     }
-    body::-webkit-scrollbar:hover {
-        width: 10px;
-        background-color: #061542;
-    }
-
+    
     body::-webkit-scrollbar-thumb {
-        background: #273B6F;
+        background: #1E1E31;
         border-radius: 5px;
     }
+
+    body::-webkit-scrollbar:hover {
+        width: 10px;
+        background-color: #14141A;
+    }
+
+    
     body::-webkit-scrollbar-thumb:hover {
-        background: #224bb8;
+        background: #26263E;
         border-radius: 5px;
     }
 
