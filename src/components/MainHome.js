@@ -37,7 +37,7 @@ function main(props) {
 
             <div className="capa2">
               <section>
-                <h1>Michael Minda</h1>
+                <h1>RONNY Minda</h1>
                 <p>Desarrollado
                   <Typed
                       strings={[
@@ -158,7 +158,7 @@ function main(props) {
           <div className="contenedor">
             <h2>Certificados</h2>
             <p className="p_u">
-              *Portafolio, paginas web o proyectos personales en las que expongo mis conocimientos en todas estas tecnologias en general un presentacion mia.*
+              Certificados conseguidos en Platzi donde me e formado mi bases en el desarrollo Web o el Front end y cosas y que estoy intentando en el Backend
             </p>
             <Link to="/certificados/">Ver Certificados</Link>
           </div>

@@ -73,7 +73,7 @@ function Header(props) {
       <>
         <HEader menu={estado}>
             <Link className="a" to="/inicio/">
-                <h1>MICHAEL MINDA</h1>
+                <h1>RONNY MINDA</h1>
             </Link>
 
             <div className="nav_blur" onClick={cambio}></div>

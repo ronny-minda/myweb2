@@ -2,12 +2,26 @@
 import { MainCertificado } from './styles/styles';
 import React, { useState } from 'react';
 
-import entorno from '../img/imgCertificados/entorno.jpg'
-import github from '../img/imgCertificados/github.jpg'
-import grid from '../img/imgCertificados/grid.jpg'
-import html from '../img/imgCertificados/html-css.jpg'
-import mobile from '../img/imgCertificados/mobile.jpg'
-import preprocesadores from '../img/imgCertificados/preprocesadores.jpg'
+// import entorno from '../img/imgCertificados/entorno.jpg'
+// import github from '../img/imgCertificados/github.jpg'
+// import grid from '../img/imgCertificados/grid.jpg'
+// import html from '../img/imgCertificados/html-css.jpg'
+// import mobile from '../img/imgCertificados/mobile.jpg'
+// import preprocesadores from '../img/imgCertificados/preprocesadores.jpg'
+
+import imagen1 from '../img/imgCertificados/1.jpeg'
+import imagen2 from '../img/imgCertificados/2.jpeg'
+import imagen3 from '../img/imgCertificados/3.jpeg'
+import imagen4 from '../img/imgCertificados/4.jpeg'
+import imagen5 from '../img/imgCertificados/5.jpeg'
+import imagen6 from '../img/imgCertificados/6.jpeg'
+import imagen7 from '../img/imgCertificados/7.jpeg'
+import imagen8 from '../img/imgCertificados/8.jpeg'
+import imagen9 from '../img/imgCertificados/9.jpeg'
+import imagen10 from '../img/imgCertificados/10.jpeg'
+import imagen11 from '../img/imgCertificados/11.jpeg'
+import imagen12 from '../img/imgCertificados/12.jpeg'
+
 
 
 
@@ -65,7 +79,7 @@ function Certificados() {
 
       setUso ({
         ...estado,
-        fullImg: entorno,
+        fullImg: imagen1,
       })
     
       cambio()
@@ -75,7 +89,7 @@ function Certificados() {
 
       setUso ({
         ...estado,
-        fullImg: github,
+        fullImg: imagen2,
       })
     
       cambio()
@@ -85,7 +99,7 @@ function Certificados() {
 
       setUso ({
         ...estado,
-        fullImg: grid,
+        fullImg: imagen3,
       })
     
       cambio()
@@ -95,12 +109,9 @@ function Certificados() {
 
         setUso ({
           ...estado,
-          fullImg: html,
+          fullImg: imagen4,
         })
 
-
-
-    
       cambio()
     }
 
@@ -108,7 +119,7 @@ function Certificados() {
 
       setUso ({
         ...estado,
-        fullImg: mobile,
+        fullImg: imagen5,
       })
     
       cambio()
@@ -118,7 +129,67 @@ function Certificados() {
 
       setUso ({
         ...estado,
-        fullImg: preprocesadores,
+        fullImg: imagen6,
+      })
+    
+      cambio()
+    }
+
+    function img7() {
+
+      setUso ({
+        ...estado,
+        fullImg: imagen7,
+      })
+    
+      cambio()
+    }
+
+    function img8() {
+
+      setUso ({
+        ...estado,
+        fullImg: imagen8,
+      })
+    
+      cambio()
+    }
+
+    function img9() {
+
+      setUso ({
+        ...estado,
+        fullImg: imagen9,
+      })
+    
+      cambio()
+    }
+
+    function img10() {
+
+      setUso ({
+        ...estado,
+        fullImg: imagen10,
+      })
+    
+      cambio()
+    }
+
+    function img11() {
+
+      setUso ({
+        ...estado,
+        fullImg: imagen11,
+      })
+    
+      cambio()
+    }
+
+    function img12() {
+
+      setUso ({
+        ...estado,
+        fullImg: imagen12,
       })
     
       cambio()
@@ -141,27 +212,45 @@ function Certificados() {
 
             <ul>
 
-              <img src={ entorno } alt=""></img>
+              <img src={ imagen1 } alt=""></img>
               <div className="boton" onClick={img1}> Ver en grande </div>
 
-              <img src={ github } alt=""></img>
+              <img src={ imagen2 } alt=""></img>
               <div className="boton" onClick={img2}> Ver en grande </div>
 
-              <img src={ grid } alt=""></img>
+              <img src={ imagen3 } alt=""></img>
               <div className="boton" onClick={img3}> Ver en grande </div>
+
+              <img src={ imagen4 } alt=""></img>
+              <div className="boton" onClick={img4}> Ver en grande </div>
+
+              <img src={ imagen5 } alt=""></img>
+              <div className="boton" onClick={img5}> Ver en grande </div>
+
+              <img src={ imagen6 } alt=""></img>
+              <div className="boton" onClick={img6}> Ver en grande </div>
 
             </ul>
 
             <ul>
 
-              <img src={ html } alt=""></img>
-              <div className="boton" onClick={img4}> Ver en grande </div>
+              <img src={ imagen7 } alt=""></img>
+              <div className="boton" onClick={img7}> Ver en grande </div>
 
-              <img src={ mobile } alt=""></img>
-              <div className="boton" onClick={img5}> Ver en grande </div>
+              <img src={ imagen8 } alt=""></img>
+              <div className="boton" onClick={img8}> Ver en grande </div>
 
-              <img src={ preprocesadores } alt=""></img>
-              <div className="boton" onClick={img6}> Ver en grande </div>
+              <img src={ imagen9 } alt=""></img>
+              <div className="boton" onClick={img9}> Ver en grande </div>
+
+              <img src={ imagen10 } alt=""></img>
+              <div className="boton" onClick={img10}> Ver en grande </div>
+
+              <img src={ imagen11 } alt=""></img>
+              <div className="boton" onClick={img11}> Ver en grande </div>
+
+              <img src={ imagen12 } alt=""></img>
+              <div className="boton" onClick={img12}> Ver en grande </div>
 
             </ul>
 

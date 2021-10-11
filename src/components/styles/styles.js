@@ -208,7 +208,7 @@ export const HEader = styled.header`
                 /* display: inline-block; */
                 transform: skew(30deg, 0deg);
                 text-decoration: none;
-                background-color: #174D96;
+                background-color: #0F131B;
                 transition: 1s;
                 box-shadow: -1px 0px 23px -1px #131823;
                 
@@ -225,11 +225,12 @@ export const HEader = styled.header`
                     margin: auto;
                 }
             }
+            
             a:hover {
-                background-color: #4C8BE0;
+                background-color: #3C475F;
             }
             .aActivo {
-                background-color: #4C8BE0;
+                background-color: #3C475F;
                 transition: 0s;
             }
         }
@@ -1266,7 +1267,9 @@ export const Footer = styled.footer`
         height: 100px;
         /* background-color: #1d2949; */
         /* background-color: #293148; */
-        background-image: linear-gradient(to right, #28314a, #262f46, #242c42, #232a3f, #21283b);
+        /* background-image: linear-gradient(to right, #28314a, #262f46, #242c42, #232a3f, #21283b); */
+        background-image: linear-gradient(to left, #121218, #1a1b24, #222430, #292e3d, #30384a);
+        box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.75);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1301,7 +1304,8 @@ export const Footer = styled.footer`
                 width: 60px;
                 /* background-color: #1d2949; */
                 background-image: linear-gradient(to right, #28314a, #262f46, #242c42, #232a3f, #21283b);
-                box-shadow: 0px 0px 6px 6px #14161C;
+                /* box-shadow: 0px 0px 6px 6px #14161C; */
+                box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
                 transition: 1s box-shadow;
                 border-radius: 50%;
                 margin: 10px;
@@ -1370,7 +1374,9 @@ export const Footer = styled.footer`
 
     .copi {
         /* background-color: #1d2949; */
-        background-image: linear-gradient(to right, #28314a, #262f46, #242c42, #232a3f, #21283b);
+        /* background-image: linear-gradient(to right, #28314a, #262f46, #242c42, #232a3f, #21283b); */
+        background-image: linear-gradient(to left, #121218, #1a1b24, #222430, #292e3d, #30384a);
+        box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.75);
         height: 130px;
         display: flex;
         justify-content: center;
@@ -2313,6 +2319,7 @@ export const LoaderScreen = styled.div`
     /* background-color: red; */
     /* background: rgb(0,0,0); */
     background-image: linear-gradient(to right top, #000207, #00030f, #000514, #000619, #00071d, #040e25, #05132e, #041737, #081f47, #0e2758, #163069, #1f387b);
+    background-image: linear-gradient(to left, #121218, #1a1b24, #222430, #292e3d, #30384a);
     
 
     height: 100vh;
