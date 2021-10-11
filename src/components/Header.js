@@ -114,7 +114,7 @@ function Header(props) {
 
             {/* <div ></div> */}
 
-            <a href={ curri } target="_blank" rel="noopener noreferrer" title="Platzi" className="CV" download>
+            <a href={ curri } target="_blank" rel="noopener noreferrer" title="Descargar curriculum" className="CV" download>
                 CV⤓
             </a>
 
