@@ -37,7 +37,7 @@ function main(props) {
 
             <div className="capa2">
               <section>
-                <h1>RONNY Minda</h1>
+                <h1>RONNY MINDA</h1>
                 <p>Desarrollado
                   <Typed
                       strings={[

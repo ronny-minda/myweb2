@@ -171,6 +171,31 @@ export const HEader = styled.header`
         
         text-decoration: none;
         color: #000000;
+        svg {
+            height: 80px;
+            width: 180px;
+            .sombra {
+                fill: #000000;
+            }
+            .cara {
+                fill: #C93939;
+                transition: 1s;
+            }
+            /* .cara:hover {
+                fill: #fff;
+            } */
+        }
+        svg:hover {
+            .cara {
+                fill: #DAE3FF;
+                /* transition: 1s; */
+            }
+            /* .cara:hover {
+                fill: #fff;
+            } */
+        }
+        
+        
         h1 {
             font-size: 2.5rem;
             font-weight: bold;
@@ -470,7 +495,7 @@ export const MainHome = styled.main`
                 color: #fff;
                 section {
                     width: 28%;
-                    h2 {
+                    h1 {
                         margin: 0 0 10px 0;
                         color: ${titulo};
                     }
@@ -854,7 +879,7 @@ export const MainHome = styled.main`
                         border-radius: 50%; */
                         img {
                             /* opacity: 70%; */
-                            height: 100%;
+                            height: 400px;
                             width: 400px;
                             object-fit: cover;
                             border-radius: 50%;
@@ -2310,7 +2335,6 @@ select:-webkit-autofill:focus {
     }
 `;
 
-
 export const LoaderScreen = styled.div`
     position: fixed;
     display: ${(props) => props.display};
@@ -2330,14 +2354,20 @@ export const LoaderScreen = styled.div`
     z-index: 999999999999;
     overflow: hidden;
 
+    /* img {
+        position: absolute;
+        height: 50%;
+    } */
+
     .amina {
         height: 500px;
         width: 500px;
+        position: absolute;
         g {
             .hojas {
                 /* animation: hojas 20s infinite; */
                 fill: #ff990000;
-                stroke-dasharray: 100;
+                stroke-dasharray: 0;
                 stroke: #998D1E;
                 stroke-width: .5;
                 filter:drop-shadow(1px 1px 3px #c7c7c7);
@@ -2345,7 +2375,7 @@ export const LoaderScreen = styled.div`
             }
 
             .hojasActivo {
-                stroke-dasharray: 560;
+                stroke-dasharray: 800;
             }
 
             .hojasColor {
@@ -2372,20 +2402,20 @@ export const LoaderScreen = styled.div`
             .etiqueta {
                 animation: etiqueta 20s infinite;
                 fill: #aa7b8300;
-                stroke-dasharray: 20;
-                stroke: #007469;
-                stroke-width: .5;
-                filter:drop-shadow(0px 0px 3px #c7c7c7);
-                transition: 5s stroke-dasharray, 5s fill;
+                stroke-dasharray: 0;
+                stroke: #7A0000;
+                stroke-width: 1;
+                filter: drop-shadow(0px 0px 1px black);
+                transition: 20s stroke-dasharray, 5s fill;
             }
 
             .etiquetaActivo {
-                stroke-dasharray: 100;
+                stroke-dasharray: 500;
             }
 
-            .etiquetaColor {
-                fill: #18FFE9;
-            }
+            /* .etiquetaColor {
+                fill: red;
+            } */
 
             /* @keyframes etiqueta {
                 0%   {
