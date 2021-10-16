@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.8d475e06.chunk.js",
-    "main.js.map": "/static/js/main.8d475e06.chunk.js.map",
+    "main.js": "/static/js/main.25ef48ac.chunk.js",
+    "main.js.map": "/static/js/main.25ef48ac.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.62000460.js",
     "runtime-main.js.map": "/static/js/runtime-main.62000460.js.map",
     "static/js/2.c61c57d2.chunk.js": "/static/js/2.c61c57d2.chunk.js",
@@ -21,7 +21,7 @@
     "static/media/8.c5a2cd8a.jpeg": "/static/media/8.c5a2cd8a.jpeg",
     "static/media/9.f28f105f.jpeg": "/static/media/9.f28f105f.jpeg",
     "static/media/CurriculumRonnyMinda.1ff67561.pdf": "/static/media/CurriculumRonnyMinda.1ff67561.pdf",
-    "static/media/PERFIL.1d674345.png": "/static/media/PERFIL.1d674345.png",
+    "static/media/PERFIL.f69dc272.png": "/static/media/PERFIL.f69dc272.png",
     "static/media/PLATZI.0e5c7dd4.svg": "/static/media/PLATZI.0e5c7dd4.svg",
     "static/media/atomic.5c170d9e.svg": "/static/media/atomic.5c170d9e.svg",
     "static/media/bootstrap.3de2e5e3.svg": "/static/media/bootstrap.3de2e5e3.svg",
@@ -44,6 +44,9 @@
     "static/media/js.0b93a64c.svg": "/static/media/js.0b93a64c.svg",
     "static/media/linkedin.0d057e42.svg": "/static/media/linkedin.0d057e42.svg",
     "static/media/llamada-telefonica.58179751.svg": "/static/media/llamada-telefonica.58179751.svg",
+    "static/media/loader1.3c3d69c2.svg": "/static/media/loader1.3c3d69c2.svg",
+    "static/media/loader2.f0d884ae.svg": "/static/media/loader2.f0d884ae.svg",
+    "static/media/logoPre.58674211.svg": "/static/media/logoPre.58674211.svg",
     "static/media/mapa.a6cbfe1d.png": "/static/media/mapa.a6cbfe1d.png",
     "static/media/node.6518214b.svg": "/static/media/node.6518214b.svg",
     "static/media/pagePortafolio.392adca5.png": "/static/media/pagePortafolio.392adca5.png",
@@ -62,6 +65,6 @@
   "entrypoints": [
     "static/js/runtime-main.62000460.js",
     "static/js/2.c61c57d2.chunk.js",
-    "static/js/main.8d475e06.chunk.js"
+    "static/js/main.25ef48ac.chunk.js"
   ]
 }
