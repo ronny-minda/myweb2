@@ -232,7 +232,7 @@ export const HEader = styled.header`
             align-items: center;
             /* transform: skew(30deg, 0deg); */
             a {
-                color: #fff;
+                color: #BFC4DC;
                 /* display: inline-block; */
                 transform: skew(30deg, 0deg);
                 text-decoration: none;
@@ -317,7 +317,7 @@ export const HEader = styled.header`
                 transition: 1s;
                 transition-delay: .5s;
                 a {
-                    color: #000000;
+                    /* color: #000000; */
                     text-decoration: none;
                     span {
 
@@ -331,6 +331,10 @@ export const HEader = styled.header`
             .Trabajos {
                 left: ${(props) => props.menu.trabajoL};
                 top: ${(props) => props.menu.trabajoT};
+            }
+            .Certificado {
+                left: ${(props) => props.menu.certificadoL};
+                top: ${(props) => props.menu.certificadoT};
             }
             .Contacto {
                 left: ${(props) => props.menu.contactoL};
