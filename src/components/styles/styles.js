@@ -2427,7 +2427,7 @@ export const LoaderScreen = styled.div`
                     stroke-dasharray: 0;
                 }
                 50%{
-                    stroke-dasharray: 300;
+                    stroke-dasharray: 200;
                 }
                 100%{
                     stroke-dasharray: 0;
