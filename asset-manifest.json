@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.db26e5e4.chunk.js",
-    "main.js.map": "/static/js/main.db26e5e4.chunk.js.map",
+    "main.js": "/static/js/main.c7cb917f.chunk.js",
+    "main.js.map": "/static/js/main.c7cb917f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.62000460.js",
     "runtime-main.js.map": "/static/js/runtime-main.62000460.js.map",
     "static/js/2.c61c57d2.chunk.js": "/static/js/2.c61c57d2.chunk.js",
@@ -46,7 +46,6 @@
     "static/media/llamada-telefonica.58179751.svg": "/static/media/llamada-telefonica.58179751.svg",
     "static/media/loader1.3c3d69c2.svg": "/static/media/loader1.3c3d69c2.svg",
     "static/media/loader2.f0d884ae.svg": "/static/media/loader2.f0d884ae.svg",
-    "static/media/logoPre.58674211.svg": "/static/media/logoPre.58674211.svg",
     "static/media/mapa.a6cbfe1d.png": "/static/media/mapa.a6cbfe1d.png",
     "static/media/node.6518214b.svg": "/static/media/node.6518214b.svg",
     "static/media/pagePortafolio.392adca5.png": "/static/media/pagePortafolio.392adca5.png",
@@ -65,6 +64,6 @@
   "entrypoints": [
     "static/js/runtime-main.62000460.js",
     "static/js/2.c61c57d2.chunk.js",
-    "static/js/main.db26e5e4.chunk.js"
+    "static/js/main.c7cb917f.chunk.js"
   ]
 }
