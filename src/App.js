@@ -235,6 +235,13 @@ import Loader from './components/LoaderScreen';
     }
 
     render() {
+
+      // if(!MainHome){
+      //   console.log('loader listoooooooooooooo')
+      // }
+
+      console.log(MainHome)
+
       return (
       <Router>
 
