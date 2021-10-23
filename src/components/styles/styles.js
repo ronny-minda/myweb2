@@ -2414,7 +2414,7 @@ export const LoaderScreen = styled.div`
             .etiqueta {
                 animation: etiqueta 20s infinite;
                 fill: #aa7b8300;
-                stroke-dasharray: 250;
+                /* stroke-dasharray: 250; */
                 stroke: #7A0000;
                 stroke-width: 1;
                 filter: drop-shadow(0px 0px 1px black);
@@ -2427,7 +2427,7 @@ export const LoaderScreen = styled.div`
                     stroke-dasharray: 0;
                 }
                 50%{
-                    stroke-dasharray: 500;
+                    stroke-dasharray: 300;
                 }
                 100%{
                     stroke-dasharray: 0;
