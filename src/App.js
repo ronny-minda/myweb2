@@ -34,26 +34,24 @@ import Loader from './components/LoaderScreen';
         });
       }, 3000);
 
-      setTimeout( () => {
-        this.setState({
-          opacy: '0',
-        });
-      }, 6000);
+      // setTimeout( () => {
+      //   this.setState({
+      //     opacy: '0',
+      //   });
+      // }, 6000);
 
-      setTimeout( () => {
-        this.setState({
+      // setTimeout( () => {
+      //   this.setState({
 
-          display: 'none'
-        });
-      }, 7000);
+      //     display: 'none'
+      //   });
+      // }, 7000);
     }
 
     constructor(props) {
       super(props);
 
-      window.onload = () =>{
-        console.log('cargadooooooooooooooooooo')
-      }
+      
 
       
 
@@ -131,8 +129,11 @@ import Loader from './components/LoaderScreen';
         etiqueta: 'etiqueta',
         hojas: 'hojas',
         opacy: '100',
-        display: 'flex'
+        display: 'flex',
 
+        logoOpa: '0',
+
+        pgcargado: false
 
         
       }
@@ -144,6 +145,33 @@ import Loader from './components/LoaderScreen';
 
       
 
+      window.onload = () =>{
+
+        this.setState({
+          logoOpa: '100'
+        });
+
+        setTimeout( () => {
+        
+          this.setState({
+            opacy: '0',
+            pgcargado: true
+          })
+  
+          setTimeout( () => {
+            this.setState({
+  
+              display: 'none'
+            });
+          }, 1000);
+
+        }, 3000)
+
+       
+     
+
+        console.log('cargadooooooooooooooooooo')
+      }
 
 
 
@@ -259,6 +287,7 @@ import Loader from './components/LoaderScreen';
           hojas={this.state.hojas}
           opacy={this.state.opacy}
           display={this.state.display}
+          logoOpa={this.state.logoOpa}
         />
 
         <Switch>

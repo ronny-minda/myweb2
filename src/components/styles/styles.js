@@ -2365,10 +2365,16 @@ export const LoaderScreen = styled.div`
         height: 50%;
     } */
 
+    .opacy {
+        opacity: ${(props) => props.logoOpa}%;
+        transition: 1s opacity;
+    }
+
     .amina {
         height: 500px;
         width: 500px;
         position: absolute;
+        
         g {
             .hojas {
                 /* animation: hojas 20s infinite; */
