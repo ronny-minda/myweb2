@@ -51,6 +51,11 @@ import Loader from './components/LoaderScreen';
     constructor(props) {
       super(props);
 
+      window.onload = () =>{
+        console.log('cargadooooooooooooooooooo')
+      }
+
+      
 
       window.addEventListener('scroll', function scrollParallax() {
 
@@ -240,7 +245,7 @@ import Loader from './components/LoaderScreen';
       //   console.log('loader listoooooooooooooo')
       // }
 
-      console.log(MainHome)
+      // console.log(MainHome)
 
       return (
       <Router>
