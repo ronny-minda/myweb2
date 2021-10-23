@@ -2366,8 +2366,8 @@ export const LoaderScreen = styled.div`
     } */
 
     .opacy {
-        opacity: ${(props) => props.logoOpa}%;
-        transition: 1s opacity;
+        opacity: ${(props) => props.logoOpa};
+        transition: 1s;
     }
 
     .amina {

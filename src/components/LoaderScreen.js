@@ -12,7 +12,8 @@ function loader(props) {
 
     return (
       <Loader   opacy={ props.opacy }
-                display={ props.display }>
+                display={ props.display }
+                logoOpa={ props.logoOpa }>
 
 
 

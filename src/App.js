@@ -131,7 +131,7 @@ import Loader from './components/LoaderScreen';
         opacy: '100',
         display: 'flex',
 
-        logoOpa: '0',
+        logoOpa: '0%',
 
         pgcargado: false
 
@@ -148,7 +148,7 @@ import Loader from './components/LoaderScreen';
       window.onload = () =>{
 
         this.setState({
-          logoOpa: '100'
+          logoOpa: '100%'
         });
 
         setTimeout( () => {
