@@ -137,7 +137,7 @@ export const HEader = styled.header`
     display: flex;
     justify-content: space-between;
     position: fixed;
-    height: 60px;
+    height: 65px;
     width: 100vw;
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
     z-index: 99999;
@@ -146,8 +146,8 @@ export const HEader = styled.header`
 
     .CV {
         height: 50px;
-        width: 50px;
-        background-color: #9D8AF4;
+        width: 55px;
+        background-color: #FF5B5B;
         transition: 0.7s background-color;
         position: absolute;
         left: calc(15% - 25px);
@@ -157,13 +157,13 @@ export const HEader = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: bold;
         border-radius: 0 0 3px 3px;
         z-index: 9;
     }
     .CV:hover {
-        background-color: #7E6FC4;
+        background-color: #A6B1D5;
     }
     
 
@@ -187,6 +187,7 @@ export const HEader = styled.header`
         }
         svg:hover {
             .cara {
+                
                 fill: #DAE3FF;
                 /* transition: 1s; */
             }
@@ -209,7 +210,7 @@ export const HEader = styled.header`
     nav {
         height: 100%;
         /* background-color: red; */
-        font-size: 11px;
+        font-size: 30px;
         display: flex;
         align-items: center;
 
@@ -246,7 +247,7 @@ export const HEader = styled.header`
                 justify-content: center;
                 align-items: center;
                 span {
-                    font-size: 1.9rem;
+                    font-size: 1.6rem;
                     font-family: 'Orbitron', sans-serif;
                     display: inline-block;
                     transform: skew(-30deg, 0deg);
@@ -424,11 +425,11 @@ export const MainHome = styled.main`
                 section {
 
                     h1 {
-                        font-size: 5rem;
+                        font-size: 4.5rem;
                         color: ${titulo};
                     }
                     p {
-                        font-size: 2rem;
+                        font-size: 1.7rem;
                         color: ${subtitulo};
                     }
                 }
@@ -499,7 +500,7 @@ export const MainHome = styled.main`
                 color: #fff;
                 section {
                     width: 28%;
-                    h1 {
+                    h2 {
                         margin: 0 0 10px 0;
                         color: ${titulo};
                     }
@@ -510,7 +511,7 @@ export const MainHome = styled.main`
             }
             
             h3 {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 color: ${titulo};
                 text-align: center;
                 padding: 15px 0;
@@ -547,7 +548,7 @@ export const MainHome = styled.main`
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        font-size: 2rem;
+                        font-size: 1.5rem;
 
                         border-top: 1px solid #fff;
                         border-right: 1px solid #fff;
@@ -648,13 +649,13 @@ export const MainHome = styled.main`
             
             /* color: #fff; */
             h2 {
-                font-size: 3.5rem;
+                font-size: 2.6rem;
                 padding: 12% 10% 1.5% 10%;
                 color: ${titulo};
             }
             .p_u {
                 padding: 1.5% 13% 13% 10%;
-                font-size: 2rem;
+                font-size: 1.6rem;
                 font-weight: 100;
                 /* width: 80%; */
                 color: ${subtitulo};
@@ -667,7 +668,7 @@ export const MainHome = styled.main`
                 height: 50px;
                 width: 160px;
                 font-weight: 100;
-                font-size: 2rem;
+                font-size: 1.6rem;
                 /* color: #fff; */
                 text-decoration: none;
                 /* background-color: red; */
@@ -711,13 +712,13 @@ export const MainHome = styled.main`
             
             /* color: #fff; */
             h2 {
-                font-size: 3.5rem;
+                font-size: 2.6rem;
                 padding: 12% 10% 1.5% 10%;
                 color: ${titulo};
             }
             .p_u {
                 padding: 1.5% 13% 13% 10%;
-                font-size: 2rem;
+                font-size: 1.6rem;
                 font-weight: 100;
                 /* width: 80%; */
                 color: ${subtitulo};
@@ -728,9 +729,9 @@ export const MainHome = styled.main`
                 justify-content: center;
                 align-items: center;
                 height: 50px;
-                width: 160px;
+                width: 180px;
                 font-weight: 100;
-                font-size: 2rem;
+                font-size: 1.6rem;
                 color: ${subtitulo};
                 text-decoration: none;
                 /* background-color: red; */
@@ -821,6 +822,7 @@ export const MainHome = styled.main`
                 }
             }
             h3 {
+                margin: 8px 0;
                 font-size: 2.2rem;
                 text-align: center;
                 color: ${titulo};
@@ -913,10 +915,10 @@ export const MainHome = styled.main`
                     section {
                         
                         h2 {
-                            font-size: 3rem;
+                            font-size: 2.8rem;
                         }
                         p {
-                            font-size: 2rem;
+                            font-size: 1.5rem;
                         }
                     }
                 }
