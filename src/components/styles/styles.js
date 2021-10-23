@@ -2376,8 +2376,8 @@ export const LoaderScreen = styled.div`
         position: absolute;
         
         g {
-            .hojas {
-                /* animation: hojas 20s infinite; */
+            /* .hojas {
+
                 fill: #ff990000;
                 stroke-dasharray: 0;
                 stroke: #998D1E;
@@ -2392,7 +2392,7 @@ export const LoaderScreen = styled.div`
 
             .hojasColor {
                 fill: #F7E648;
-            }
+            } */
 /* 
             @keyframes hojas {
                 0%   {
@@ -2414,16 +2414,29 @@ export const LoaderScreen = styled.div`
             .etiqueta {
                 animation: etiqueta 20s infinite;
                 fill: #aa7b8300;
-                stroke-dasharray: 0;
+                stroke-dasharray: 250;
                 stroke: #7A0000;
                 stroke-width: 1;
                 filter: drop-shadow(0px 0px 1px black);
-                transition: 20s stroke-dasharray, 5s fill;
+                /* transition: 20s stroke-dasharray, 5s fill; */
+                animation: myfirst 10s linear infinite;
             }
 
-            .etiquetaActivo {
-                stroke-dasharray: 500;
+            @keyframes myfirst {
+                0%{
+                    stroke-dasharray: 0;
+                }
+                50%{
+                    stroke-dasharray: 500;
+                }
+                100%{
+                    stroke-dasharray: 0;
+                }
             }
+
+            /* .etiquetaActivo {
+                stroke-dasharray: 500;
+            } */
 
             /* .etiquetaColor {
                 fill: red;
