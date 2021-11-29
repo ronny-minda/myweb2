@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HEader } from './styles/styles';
-import curri from '../assets/CurriculumRonnyMinda.pdf';
+import curri from '../assets/CurriculumRonnyMinda1.pdf';
 // import logo from '../svg/logoPre.svg';
 
 function Header(props) {
