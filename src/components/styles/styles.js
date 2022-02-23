@@ -576,10 +576,10 @@ export const MainHome = styled.main`
                         background-image: url(${ubuntu});
                     }
                     .git {
-                        background-image: url(${git});
+                        background-image: url(${github});
                     }
                     .github {
-                        background-image: url(${github});
+                        background-image: url(${git});
                     }
                 }
 
