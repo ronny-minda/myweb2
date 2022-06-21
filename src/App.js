@@ -314,7 +314,7 @@ import Loader from './components/LoaderScreen';
 
 
 
-        <Route exact path="/inicio/">
+        <Route exact path="/myweb2/inicio/">
           
           <MainHome 
             asercaTra={this.state.asercaTra}
@@ -338,15 +338,15 @@ import Loader from './components/LoaderScreen';
 
           
 
-          <Route exact path="/trabajos/">
+          <Route exact path="/myweb2/trabajos/">
             <Trabajos/>
           </Route>
 
-          <Route exact path="/certificados/">
+          <Route exact path="/myweb2/certificados/">
             <Certificados/>
           </Route>
 
-          <Route exact path="/contacto/">
+          <Route exact path="/myweb2/contacto/">
             <Contacto/>
           </Route>
 
