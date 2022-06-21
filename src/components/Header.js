@@ -147,25 +147,25 @@ function Header(props) {
 
             <nav>
                 <li className="Inicio">
-                    <Link className={ (URLactual === '/' || URLactual === '/inicio/') ? 'aActivo' : '' } to="/inicio/" onClick={cambio}>
+                    <Link className={ (URLactual === '/myweb2/' || URLactual === '/myweb2/inicio/') ? 'aActivo' : '' } to="/myweb2/inicio/" onClick={cambio}>
                         <span>Inicio</span>
                     </Link>
                 </li>
 
                 <li className="Trabajos">
-                    <Link className={ URLactual === '/trabajos/' ? 'aActivo' : '' } to="/trabajos/" onClick={cambio}>
+                    <Link className={ URLactual === '/trabajos/' ? 'aActivo' : '' } to="/myweb2/trabajos/" onClick={cambio}>
                         <span>Trabajos</span>
                     </Link>
                 </li>
 
                 <li className="Certificado">
-                    <Link className={ URLactual === '/certificados/' ? 'aActivo' : ''  } to="/certificados/" onClick={cambio}>
+                    <Link className={ URLactual === '/certificados/' ? 'aActivo' : ''  } to="/myweb2/certificados/" onClick={cambio}>
                         <span>Certficados</span>
                     </Link>
                 </li>
 
                 <li className="Contacto">
-                    <Link className={ URLactual === '/contacto/' ? 'aActivo' : '' } to="/contacto/" onClick={cambio}>
+                    <Link className={ URLactual === '/contacto/' ? 'aActivo' : '' } to="/myweb2/contacto/" onClick={cambio}>
                         <span>Contacto</span>
                     </Link>
                 </li>
