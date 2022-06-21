@@ -1,8 +1,8 @@
 {
-  "name": "Portafolio",
+  "name": "portafolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ronny-minda.github.io/",
+  "homepage": "https://ronny-minda.github.io/myweb2/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
