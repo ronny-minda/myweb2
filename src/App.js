@@ -292,7 +292,7 @@ import Loader from './components/LoaderScreen';
 
         <Switch>
 
-        <Route exact path="/">
+        <Route exact path="/myweb2/">
           
           <MainHome 
             asercaTra={this.state.asercaTra}
